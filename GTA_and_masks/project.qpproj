@@ -1,0 +1,2937 @@
+{
+  "version": "0.5.1",
+  "createTimestamp": 1712234176275,
+  "modifyTimestamp": 1712234176275,
+  "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/GTA_and_masks/project.qpproj",
+  "lastID": 48,
+  "images": [
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/2A_Cores_12/2A_cores_12%20(1,%20x\u003d918,%20y\u003d1593,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "2A_cores_12 (1, x\u003d918, y\u003d1593, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 1,
+      "randomizedName": "79c7c7a1-8915-4538-8b45-2e1cd78b6438",
+      "imageName": "2A_cores_12 (1, x\u003d918, y\u003d1593, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/2A_Cores_12/2A_cores_12%20(1,%20x\u003d1528,%20y\u003d673,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "2A_cores_12 (1, x\u003d1528, y\u003d673, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 2,
+      "randomizedName": "158e4cb2-5382-4d07-a566-f7261a528460",
+      "imageName": "2A_cores_12 (1, x\u003d1528, y\u003d673, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/2A_Cores_12/2A_cores_12%20(1,%20x\u003d2149,%20y\u003d2511,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "2A_cores_12 (1, x\u003d2149, y\u003d2511, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 3,
+      "randomizedName": "58a08ece-fc6b-4857-bcfb-6f591f869df8",
+      "imageName": "2A_cores_12 (1, x\u003d2149, y\u003d2511, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_4/3A_cores_4%20(1,%20x\u003d406,%20y\u003d1720,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_4 (1, x\u003d406, y\u003d1720, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 4,
+      "randomizedName": "42475f42-42a1-49a6-acef-06f110c1ca97",
+      "imageName": "3A_cores_4 (1, x\u003d406, y\u003d1720, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_4/3A_cores_4%20(1,%20x\u003d1235,%20y\u003d1217,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_4 (1, x\u003d1235, y\u003d1217, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 5,
+      "randomizedName": "aebdde21-8a18-4899-95da-0ae805941f38",
+      "imageName": "3A_cores_4 (1, x\u003d1235, y\u003d1217, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_4/3A_cores_4%20(1,%20x\u003d1508,%20y\u003d2266,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_4 (1, x\u003d1508, y\u003d2266, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 6,
+      "randomizedName": "eb2585ae-db02-4d78-9eec-7da59f870e09",
+      "imageName": "3A_cores_4 (1, x\u003d1508, y\u003d2266, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_5/3A_cores_5%20(1,%20x\u003d549,%20y\u003d1344,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_5 (1, x\u003d549, y\u003d1344, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 7,
+      "randomizedName": "c0c9f001-175e-458d-98ed-e9f724e164e0",
+      "imageName": "3A_cores_5 (1, x\u003d549, y\u003d1344, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_5/3A_cores_5%20(1,%20x\u003d1570,%20y\u003d1558,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_5 (1, x\u003d1570, y\u003d1558, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 8,
+      "randomizedName": "0ea337ea-69b4-4c92-bd2b-dc3185b9f1b1",
+      "imageName": "3A_cores_5 (1, x\u003d1570, y\u003d1558, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_5/3A_cores_5%20(1,%20x\u003d1959,%20y\u003d2141,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_5 (1, x\u003d1959, y\u003d2141, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 9,
+      "randomizedName": "590fafa7-a68f-46d8-88a8-efa10d290c5d",
+      "imageName": "3A_cores_5 (1, x\u003d1959, y\u003d2141, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_19/3A_cores_19%20(1,%20x\u003d910,%20y\u003d2453,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_19 (1, x\u003d910, y\u003d2453, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 10,
+      "randomizedName": "fd8ae831-2177-47d2-a748-fe1a3020944f",
+      "imageName": "3A_cores_19 (1, x\u003d910, y\u003d2453, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_19/3A_cores_19%20(1,%20x\u003d1422,%20y\u003d1723,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_19 (1, x\u003d1422, y\u003d1723, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 11,
+      "randomizedName": "54cc33e4-a4db-449f-bf1c-15bf6e6403bd",
+      "imageName": "3A_cores_19 (1, x\u003d1422, y\u003d1723, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/3A_Cores_19/3A_cores_19%20(1,%20x\u003d2117,%20y\u003d924,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "3A_cores_19 (1, x\u003d2117, y\u003d924, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 12,
+      "randomizedName": "3f5712c6-65e2-47b4-8aff-2b9a6ffe62db",
+      "imageName": "3A_cores_19 (1, x\u003d2117, y\u003d924, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_Cores_2/4A_cores_2%20(1,%20x\u003d466,%20y\u003d1243,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_2 (1, x\u003d466, y\u003d1243, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 13,
+      "randomizedName": "159a0bf3-f305-42b2-8ba0-a9fe945761c8",
+      "imageName": "4A_cores_2 (1, x\u003d466, y\u003d1243, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_Cores_2/4A_cores_2%20(1,%20x\u003d1373,%20y\u003d2528,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_2 (1, x\u003d1373, y\u003d2528, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 14,
+      "randomizedName": "6105e07c-1fde-4e42-9b84-040d633c82b9",
+      "imageName": "4A_cores_2 (1, x\u003d1373, y\u003d2528, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_Cores_2/4A_cores_2%20(1,%20x\u003d1683,%20y\u003d936,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_2 (1, x\u003d1683, y\u003d936, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 15,
+      "randomizedName": "4d1305ee-f29b-413a-b020-7491451259e4",
+      "imageName": "4A_cores_2 (1, x\u003d1683, y\u003d936, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_8/4A_cores_8%20(1,%20x\u003d2157,%20y\u003d1037,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_8 (1, x\u003d2157, y\u003d1037, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 16,
+      "randomizedName": "0235a4bc-a832-4e26-9300-b59eb8a91e04",
+      "imageName": "4A_cores_8 (1, x\u003d2157, y\u003d1037, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_8/4A_cores_8%20(1,%20x\u003d1246,%20y\u003d1795,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_8 (1, x\u003d1246, y\u003d1795, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 17,
+      "randomizedName": "36a8fadd-c2ee-4088-9f9e-be63e3b9d25a",
+      "imageName": "4A_cores_8 (1, x\u003d1246, y\u003d1795, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_8/4A_cores_8%20(1,%20x\u003d1354,%20y\u003d2343,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_8 (1, x\u003d1354, y\u003d2343, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 18,
+      "randomizedName": "d38adcfa-c26b-4b76-8b25-50a46b1e61e4",
+      "imageName": "4A_cores_8 (1, x\u003d1354, y\u003d2343, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_11/4A_cores_11%20(1,%20x\u003d356,%20y\u003d1561,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_11 (1, x\u003d356, y\u003d1561, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 19,
+      "randomizedName": "66bf3184-18b0-4053-9d62-fa5a41f92e14",
+      "imageName": "4A_cores_11 (1, x\u003d356, y\u003d1561, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_11/4A_cores_11%20(1,%20x\u003d1598,%20y\u003d2466,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_11 (1, x\u003d1598, y\u003d2466, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 20,
+      "randomizedName": "de13f539-129a-4251-8f1c-3ea1378e778c",
+      "imageName": "4A_cores_11 (1, x\u003d1598, y\u003d2466, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_11/4A_cores_11%20(1,%20x\u003d2435,%20y\u003d1250,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_11 (1, x\u003d2435, y\u003d1250, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 21,
+      "randomizedName": "0b1a1385-226b-4510-8e06-f25b4c9e0390",
+      "imageName": "4A_cores_11 (1, x\u003d2435, y\u003d1250, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_18/4A_cores_18%20(1,%20x\u003d1810,%20y\u003d409,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_18 (1, x\u003d1810, y\u003d409, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 22,
+      "randomizedName": "a41f1504-9488-43fd-bc65-850e56766e14",
+      "imageName": "4A_cores_18 (1, x\u003d1810, y\u003d409, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_18/4A_cores_18%20(1,%20x\u003d1939,%20y\u003d1571,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_18 (1, x\u003d1939, y\u003d1571, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 23,
+      "randomizedName": "d4ea8fb3-1fc1-4589-95aa-bcc6122b797d",
+      "imageName": "4A_cores_18 (1, x\u003d1939, y\u003d1571, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_18/4A_cores_18%20(1,%20x\u003d2461,%20y\u003d1469,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_18 (1, x\u003d2461, y\u003d1469, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 24,
+      "randomizedName": "ce89b9fd-f6d4-41ce-9e41-39cd9ca41d39",
+      "imageName": "4A_cores_18 (1, x\u003d2461, y\u003d1469, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_20/4A_cores_20%20(1,%20x\u003d1646,%20y\u003d2266,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_20 (1, x\u003d1646, y\u003d2266, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 25,
+      "randomizedName": "88274bc7-9be3-4f63-928f-aa46e7d2268b",
+      "imageName": "4A_cores_20 (1, x\u003d1646, y\u003d2266, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_20/4A_cores_20%20(1,%20x\u003d420,%20y\u003d1016,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_20 (1, x\u003d420, y\u003d1016, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 26,
+      "randomizedName": "08a55a24-ad0c-4bc7-928b-afbaa713bef7",
+      "imageName": "4A_cores_20 (1, x\u003d420, y\u003d1016, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/4A_cores_20/4A_cores_20%20(1,%20x\u003d1661,%20y\u003d1247,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "4A_cores_20 (1, x\u003d1661, y\u003d1247, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 27,
+      "randomizedName": "d8f44aa7-5260-45b5-a65b-6e60e397babc",
+      "imageName": "4A_cores_20 (1, x\u003d1661, y\u003d1247, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/5A_cores_16/5A_cores_16%20(1,%20x\u003d1256,%20y\u003d762,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "5A_cores_16 (1, x\u003d1256, y\u003d762, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 28,
+      "randomizedName": "6429e9b2-fb89-454f-9975-cffa468e33e0",
+      "imageName": "5A_cores_16 (1, x\u003d1256, y\u003d762, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/5A_cores_16/5A_cores_16%20(1,%20x\u003d1461,%20y\u003d1779,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "5A_cores_16 (1, x\u003d1461, y\u003d1779, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 29,
+      "randomizedName": "46f82477-7005-4e2e-b9a5-dd1d487ca947",
+      "imageName": "5A_cores_16 (1, x\u003d1461, y\u003d1779, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/5A_cores_16/5A_cores_16%20(1,%20x\u003d2074,%20y\u003d1998,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "5A_cores_16 (1, x\u003d2074, y\u003d1998, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 30,
+      "randomizedName": "7b6d63c1-e6d3-4337-90c8-8f2a49b8b7c9",
+      "imageName": "5A_cores_16 (1, x\u003d2074, y\u003d1998, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_14/6A_cores_14%20(1,%20x\u003d1605,%20y\u003d2422,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_14 (1, x\u003d1605, y\u003d2422, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 31,
+      "randomizedName": "8f22d322-c2f7-4e61-9808-9d8c2a5a0f6d",
+      "imageName": "6A_cores_14 (1, x\u003d1605, y\u003d2422, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_14/6A_cores_14%20(1,%20x\u003d1914,%20y\u003d417,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_14 (1, x\u003d1914, y\u003d417, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 32,
+      "randomizedName": "2f7ed99f-4f69-4dc2-b514-3bc71a4a6cfa",
+      "imageName": "6A_cores_14 (1, x\u003d1914, y\u003d417, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_14/6A_cores_14%20(1,%20x\u003d2483,%20y\u003d1316,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_14 (1, x\u003d2483, y\u003d1316, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 33,
+      "randomizedName": "e9decf19-a44b-4597-a743-5700935b3ead",
+      "imageName": "6A_cores_14 (1, x\u003d2483, y\u003d1316, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_15/6A_cores_15%20(1,%20x\u003d1251,%20y\u003d840,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_15 (1, x\u003d1251, y\u003d840, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 34,
+      "randomizedName": "cfa79635-7af7-4ce6-87e2-4bca57e48c3b",
+      "imageName": "6A_cores_15 (1, x\u003d1251, y\u003d840, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_15/6A_cores_15%20(1,%20x\u003d1311,%20y\u003d273,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_15 (1, x\u003d1311, y\u003d273, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 35,
+      "randomizedName": "b70b014a-52cf-4d7d-9925-74c3a3cdd4dd",
+      "imageName": "6A_cores_15 (1, x\u003d1311, y\u003d273, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_15/6A_cores_15%20(1,%20x\u003d1327,%20y\u003d2402,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_15 (1, x\u003d1327, y\u003d2402, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 36,
+      "randomizedName": "e6d0b5dc-74e3-4d86-aa70-c4f4bd8a0c8e",
+      "imageName": "6A_cores_15 (1, x\u003d1327, y\u003d2402, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/20A_cores_3/20A_cores_3%20(1,%20x\u003d1427,%20y\u003d2559,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "20A_cores_3 (1, x\u003d1427, y\u003d2559, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 37,
+      "randomizedName": "786891ee-5038-4ed9-9e43-655fbbf07129",
+      "imageName": "20A_cores_3 (1, x\u003d1427, y\u003d2559, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/20A_cores_3/20A_cores_3%20(1,%20x\u003d1943,%20y\u003d1291,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "20A_cores_3 (1, x\u003d1943, y\u003d1291, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 38,
+      "randomizedName": "f33aef76-088b-4996-8d80-8cf97c0f0a47",
+      "imageName": "20A_cores_3 (1, x\u003d1943, y\u003d1291, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/20A_cores_3/20A_cores_3%20(1,%20x\u003d2004,%20y\u003d927,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "20A_cores_3 (1, x\u003d2004, y\u003d927, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 39,
+      "randomizedName": "5f106873-f0bc-4eac-a9f7-22bcd95a015e",
+      "imageName": "20A_cores_3 (1, x\u003d2004, y\u003d927, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/15A_cores_17%20-1/15A_cores_17%20(1,%20x\u003d1159,%20y\u003d1602,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "15A_cores_17 (1, x\u003d1159, y\u003d1602, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 40,
+      "randomizedName": "917dfe0f-6b85-4e92-a449-1652bdd3c03b",
+      "imageName": "15A_cores_17 (1, x\u003d1159, y\u003d1602, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/15A_cores_17%20-1/15A_cores_17%20(1,%20x\u003d1780,%20y\u003d667,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "15A_cores_17 (1, x\u003d1780, y\u003d667, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 41,
+      "randomizedName": "22c73b1e-4024-4936-a8e7-0aaebbe8d79e",
+      "imageName": "15A_cores_17 (1, x\u003d1780, y\u003d667, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/15A_cores_17%20-1/15A_cores_17%20(1,%20x\u003d2373,%20y\u003d1819,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "15A_cores_17 (1, x\u003d2373, y\u003d1819, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 42,
+      "randomizedName": "9818246a-08ca-4696-a635-acdb81bdb3c4",
+      "imageName": "15A_cores_17 (1, x\u003d2373, y\u003d1819, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_10%20-1/16A_cores_10%20(1,%20x\u003d979,%20y\u003d570,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_10 (1, x\u003d979, y\u003d570, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 43,
+      "randomizedName": "c84b655d-9c60-419d-9120-29fd56f507df",
+      "imageName": "16A_cores_10 (1, x\u003d979, y\u003d570, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_10%20-1/16A_cores_10%20(1,%20x\u003d1612,%20y\u003d2265,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_10 (1, x\u003d1612, y\u003d2265, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 44,
+      "randomizedName": "684f592f-2cb0-49d2-99c8-929e631b9638",
+      "imageName": "16A_cores_10 (1, x\u003d1612, y\u003d2265, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_10%20-1/16A_cores_10%20(1,%20x\u003d2404,%20y\u003d1795,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_10 (1, x\u003d2404, y\u003d1795, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 45,
+      "randomizedName": "826b5722-b535-495b-83ea-cd9cc065084b",
+      "imageName": "16A_cores_10 (1, x\u003d2404, y\u003d1795, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_1/16A_cores_1%20(1,%20x\u003d1010,%20y\u003d2542,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_1 (1, x\u003d1010, y\u003d2542, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 46,
+      "randomizedName": "ea1e0508-42db-4742-965d-68bb89f7405d",
+      "imageName": "16A_cores_1 (1, x\u003d1010, y\u003d2542, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_1/16A_cores_1%20(1,%20x\u003d1465,%20y\u003d798,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_1 (1, x\u003d1465, y\u003d798, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 47,
+      "randomizedName": "4a54d504-d0ad-40a1-8ca4-b94b76b75aa4",
+      "imageName": "16A_cores_1 (1, x\u003d1465, y\u003d798, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_1/16A_cores_1%20(1,%20x\u003d2020,%20y\u003d1549,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_1 (1, x\u003d2020, y\u003d1549, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 48,
+      "randomizedName": "284dbaf7-386c-4d49-ba8b-c7fa14f54fee",
+      "imageName": "16A_cores_1 (1, x\u003d2020, y\u003d1549, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    }
+  ]
+}
