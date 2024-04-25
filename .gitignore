@@ -4,10 +4,8 @@ QuPath-v0.5.1-Linux
 Stardist_training_sample.py
 slides_from_stardist.pdf
 .ipynb_checkpoints/
-GTA_and_masks/
 TMA/
 Untitled.ipynb
-annotations_for_training/
 image_prediction/
 randomly_selected_TMA_cores/
 split_tma-cores/
