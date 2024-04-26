@@ -111,7 +111,9 @@ The workflow is explained below:
 - Click "Create project" and select the folder created above.
 - Anotate the ROI (all cell nuclei in each crop) and press Ctrl+ S to save the annotations. 
 - Go to Automate tab on QuPath and select "script editor"
-- The giff below show a simple way to do this.
+- The image below show a simple way to do this.
+
+How to annotate region of interests in each crop using QuPath ![](Animation.gif)
 - All annotations must be exported after.
 - To do this, load the ```save_and_export_annotations.groovy``` script into the script editor. 
 - [This QuPath script](https://forum.image.sc/t/export-qupath-annotations-for-stardist-training/37391/3), which has been provided by Olivier Burri and Romain Guiet, will export the original images and the annotations as masks and save them in the specified directories. 
