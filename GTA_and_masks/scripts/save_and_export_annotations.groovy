@@ -13,18 +13,17 @@
 */
 
 // USER SETTINGS
-def channel_of_interest = 1 // null to export all the channels 
+def channel_of_interest = null // null to export all the channels and 1 to export only greyscaled images (one channel)
 def downsample = 1
 
 
 def image_name = getProjectEntry().getImageName()
 
-
 def rm = RoiManager.getRoiManager() ?: new RoiManager()
+
 // create an annotation of the entire image
 createSelectAllObject(true)
 def fullimage_annotation = getSelectedObject()
-
 
 imageData = getCurrentImageData();
 server = imageData.getServer();
@@ -76,7 +75,6 @@ image.close()
 removeObject(  fullimage_annotation,true )
 
 
-
 // This will save the images in the selected folder
 def saveImages(def images, def labels, def name) {
     def source_folder = new File ( buildFilePath('/Users/Elijah/Documents/BINP37_Research_Project/GTA_and_masks/images_and_masks', 'ground_truth', 'images' ) )
@@ -89,7 +87,6 @@ def saveImages(def images, def labels, def name) {
 
 }
 
-
 // Manage Imports
 import qupath.lib.roi.RectangleROI
 import qupath.imagej.gui.IJExtension;
@@ -97,4 +94,5 @@ import ij.IJ
 import ij.gui.Roi
 import ij.plugin.ChannelSplitter
 import ij.plugin.frame.RoiManager
+
 print "All Annotations Saved!"
