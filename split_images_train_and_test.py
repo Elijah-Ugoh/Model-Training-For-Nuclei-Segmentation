@@ -58,8 +58,8 @@ for filename in train_images:
     dst_image = os.path.join(train_images_directory, filename)
     src_mask = os.path.join(masks_directory, filename)
     dst_mask = os.path.join(train_masks_directory, filename)
-    shutil.move(src_image, dst_image)
-    shutil.move(src_mask, dst_mask)
+    shutil.copy(src_image, dst_image)
+    shutil.copy(src_mask, dst_mask)
 
 # Move images and masks to the test directory
 for filename in test_images:
@@ -67,8 +67,8 @@ for filename in test_images:
     dst_image = os.path.join(test_images_directory, filename)
     src_mask = os.path.join(masks_directory, filename)
     dst_mask = os.path.join(test_masks_directory, filename)
-    shutil.move(src_image, dst_image)
-    shutil.move(src_mask, dst_mask)
+    shutil.copy(src_image, dst_image)
+    shutil.copy(src_mask, dst_mask)
 
 print("Dataset split completed successfully!")
 print("Number of training images:", len(train_images))
