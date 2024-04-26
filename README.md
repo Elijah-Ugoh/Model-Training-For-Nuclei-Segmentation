@@ -111,11 +111,33 @@ The workflow is explained below:
 - Click "Create project" and select the folder created above.
 - Anotate the ROI (all cell nuclei in each crop) and press Ctrl+ S to save the annotations. 
 - Go to Automate tab on QuPath and select "script editor"
-- Load the ```save_and_export_annotations.groovy``` script into the script editor. 
-- The giff below show a simple way to do this. 
-- [This script](https://forum.image.sc/t/export-qupath-annotations-for-stardist-training/37391/3) has been provided by Olivier Burri and Romain Guiet. 
-- Remember to change lines 82 and 83 with the preferred directories for saving the ground truth images and masks. 
+- The giff below show a simple way to do this.
+- All annotations must be exported after.
+- To do this, load the ```save_and_export_annotations.groovy``` script into the script editor. 
+- [This QuPath script](https://forum.image.sc/t/export-qupath-annotations-for-stardist-training/37391/3), which has been provided by Olivier Burri and Romain Guiet, will export the original images and the annotations as masks and save them in the specified directories. 
+- Remember to change lines 80 and 81 to the preferred directories for saving the ground truth images and masks. 
+- Instead of running the script every time an annotation image is created, use "Run for project" from the script editor menu to export all the annotations for all images in the QuPath project ```GTA_and_masks```.
 
+### Split Data into Test and Train Datasets
+use the python ```split_images_train_and_test.py``` to randomly split the data into test and train datasets. This way, we ensure that the images for tests are as representative of the training images as possible while also saving time when dealing with large training datasets.
+
+It is conventional to use 10-20% of the data for testing. Here, 12% considering the data isn't large.
+From the terminal, run the script as:
+
+```bash
+python split_images_train_and_test.py
+
+# NB: Update the directories for the images (in the script), as well as where the test and train data will be saved after splitting.  
+```
+
+### Training the model
+The ```Model_Training_Script``` is run in Google Colab. But, it can also be run in other IDEs or from the terminal. 
+
+However, Colab has a simple interface and works best without issues. The script contains the instructions for importing the data and training it using the StarDist deep learning package in Python.
+
+The code is to be run in a stepwise manner, starting from installing StarDist and TensorFlow (if using Colab, the latest TensorFlow comes pre-installed), as well as importing all necessary python packages.
+
+NB: StarDist works well for segmenting all kinds of blob-like objects, especially roundish objects like cells and nuclei with a star-convex shape.
 
 
 
