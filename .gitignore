@@ -1,4 +1,3 @@
-BINP37-Research-Project-Documentation.md
 New_Project/
 QuPath-v0.5.1-Linux
 Stardist_training_sample.py
@@ -10,3 +9,10 @@ image_prediction/
 randomly_selected_TMA_cores/
 split_tma-cores/
 tma-paccs/
+All_models_generated/
+Animation.gif
+ScreenToGif.2.41.Setup.x64.msi
+fiji-win64/
+first_training.zip
+first_training/
+second_training/
