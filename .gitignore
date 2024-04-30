@@ -16,3 +16,8 @@ fiji-win64/
 first_training.zip
 first_training/
 second_training/
+IoU_Threshold.png
+data/
+data_training.zip
+training_pogress.png
+visualization_in_tensorboard.png
