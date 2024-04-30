@@ -26,8 +26,8 @@ Follow the guide on the documenation
 Installing and using [StarDist](https://github.com/stardist/stardist)
 
 ```bash
-pip install tensorflow # First install TensorFlow 2 - 2.16.1
-pip install stardist # then install stardist - 0.4.6 
+pip install tensorflow # First install TensorFlow (version  2.15.0)
+pip install stardist # then install stardist -(version 0.9.1)
 ```
 
 ### Installing Fiji
