@@ -4,11 +4,21 @@ The scripts for training and validation have already been provided by [StarDist]
 But, before running these scripts, the following steps must have been completed. Refer to the ```README.md``` file for details on how to do these:
 
 1. De-arraying of the TMA cores
-2. Create crops of images and tasks for training
+2. Creating crops of images and masks for training
+3. Splitting the images and masks into training and test datasets
 
-## Data preparation
+## Data Preparation
+- Before the actual training is done, it is recommended to confirm the fitting of the ground-truth labels with star-convex polygons, as this shows the optimal "number of rays" to be used in the training process. It also shows if the annotations in the image are ideal for training with the Stardist model.
+
+- Open a Google Colab notebook and run each code block one after the other. See the data prep script used for this project [here](https://colab.research.google.com/drive/1gw9ATdYw8QktLqLJT5pQ9wKxQ9zOvYir?usp=sharing).
+
 ```python
-# This block of code sets up an environment for working with image processing tasks using the StarDist model, and imports all the necessary libraries and functions to facilitate the training. 
+# First, install StarDist
+pip install stardist
+```
+
+```python
+# This block of code sets up an environment for working with image processing tasks using the StarDist model, and imports all the necessary libraries and functions to facilitate the training.
 
 from __future__ import print_function, unicode_literals, absolute_import, division
 import numpy as np
@@ -21,6 +31,7 @@ import matplotlib.pyplot as plt
 from glob import glob
 from tqdm import tqdm
 from tifffile import imread
+from csbdeep.utils import Path
 
 from stardist import fill_label_holes, relabel_image_stardist, random_label_cmap
 from stardist.matching import matching_dataset
@@ -30,17 +41,42 @@ lbl_cmap = random_label_cmap()
 ```
 
 ```python
-# Read in and prepare training data (images and their corresponding masks) for the machine learning model
+# Read in the training data (images and their corresponding masks)
+# Before running this code, make sure the folder containing the iomages and masks are saved as a zip file
+# Run the code and select the zip file to upload the data
+from google.colab import files # Import he Path object from the google.colab module
+import os
+import shutil
+
+# Upload the zip file
+uploaded = files.upload()
+
+# Extract the uploaded zip file
+for filename in uploaded.keys():
+    # Create a directory with the same name as the zip file (without the .zip extension)
+    folder_name = os.path.splitext(filename)[0]
+    os.makedirs(folder_name, exist_ok=True)
+    # Extract the contents of the zip file into the newly created directory
+    shutil.unpack_archive(filename, folder_name)
+    print(f"Uploaded folder '{folder_name}'")
+```
+```python
+# Check the file structure
+!find data_training -type d | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"
+```
+
+```python
+# Check that the data are correctly read in and assign variable to the images and their corresponding masks
 from pathlib import Path  # Import he Path object from the pathlib module
 
-X = sorted(glob('train/images/*.tif'))
-Y = sorted(glob('train/masks/*.tif'))
+X = sorted(glob('data_training/data/train/images/*.tif'))
+Y = sorted(glob('data_training/data/train/masks/*.tif'))
 assert all(Path(x).name==Path(y).name for x,y in zip(X,Y))
 
 # Print the list of files returned by the glob function call for X and Y
-print("Files found for X:")
+print("Files found in images folder:")
 print(X)
-print("\nFiles found for Y:")
+print("\nFiles found in masks folder:")
 print(Y)
 ``` 
 
@@ -51,10 +87,10 @@ Y = list(map(imread,Y))
 ```
 
 ```python
-# Check the label, shapes, and dimensions of the images to ensure they are valid for the use in the training
+# Check the label, shapes, and dimensions of the images to ensure they are valid for use in the training
+# This code selects a specific image and its label (at index i) for further processing, assuming that X and Y are lists or arrays containing image data and their corresponding labels
 
-# Check if X has at least one element
-if len(X) > 0:
+if len(X) > 0:    # Check if X has at least one element
     # Calculate the index i as the minimum value between 4 and one less than the length of X
     i = min(4, len(X) - 1)
     # Access elements from X and Y at index i
@@ -67,21 +103,22 @@ else:
 ```
 
 ```python
-# Comfirm the dimensions of images and masks
+# Use the example image selected above to comfirm the dimensions of images and masks
 print("Image shape:", img.shape)
 print("Label shape:", lbl.shape)
 ``` 
 
 ```python
-# Preview the raw and ground truth label of one image
-plt.figure(figsize=(16,10))
-plt.subplot(121); plt.imshow(img,cmap='gray');   plt.axis('off'); plt.title('Raw image')
+# Preview the raw and ground truth label of the image
+plt.figure(figsize=(16,10))  # Set plot size
+plt.subplot(121); plt.imshow(img,cmap='gray'); plt.axis('off'); plt.title('Raw image')
 plt.subplot(122); plt.imshow(lbl,cmap=lbl_cmap); plt.axis('off'); plt.title('GT labels')
 None;
 ```
 
 ```python
-# This evaluates the performance of the StarDist model with different numbers of rays `(n_rays) by reconstructing the labels and calculating the mean Intersection over Union (IoU) scores for each configuration.
+# This evaluates the performance of the data with the StarDist model using different numbers of rays `(n_rays)
+# It reconstructs the labels and calculates the mean Intersection over Union (IoU) scores for each configuration.
 
 n_rays = [2**i for i in range(2,8)]
 scores = []
@@ -111,21 +148,54 @@ for a,r in zip(ax.flat,n_rays):
     a.axis('off')
 plt.tight_layout();
 ```
+The plot shows that the annotations are ideal for training a neural network using StarDist and the training can be performed using 32, 64, and 128 rays.
+
+
 
 ## Training Script
+- Open a Google Colab notebook and run each code block one after the other. See the model training script used for this project [here](https://colab.research.google.com/drive/1KKI6eyBgBG-590ktFPLUk96BCevFO_il?usp=sharing).
 
 ```python
-# Check whether tensor flow and stardist are already installed
+pip install stardist
+```
+
+```python
 import stardist
-import tensorflow as tf
+import tensorflow as tf  # TensorFlow is already installed in Google Colab
 
-print("StarDist version:", stardist.__version__)
+# Check installed versions
+print("StarDist version:", stardist.__version__) 
 print("TensorFlow version:", tf.__version__)
+```
 
-# If not, run
-pip install stardist tensorflow
+```python
+# Read in the training data (images and their corresponding masks)
+# Before running this code, make sure the folder containing the images and masks are saved as a zip file
+# Run the code and select the zip file to upload the data
+from google.colab import files # Import he Path object from the google.colab module
+import os
+import shutil
 
-# Sets up an environment for traing using the model and imports all necessary dependencies
+# Upload the zip file
+uploaded = files.upload()
+
+# Extract the uploaded zip file
+for filename in uploaded.keys():
+    # Create a directory with the same name as the zip file (without the .zip extension)
+    folder_name = os.path.splitext(filename)[0]
+    os.makedirs(folder_name, exist_ok=True)
+    # Extract the contents of the zip file into the newly created directory
+    shutil.unpack_archive(filename, folder_name)
+    print(f"Uploaded folder '{folder_name}'")
+```
+
+```python
+# Check the file structure
+!find data_training -type d | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"
+```
+
+```python
+# Set up an environment for training using StarDist and import all necessary dependencies
 from __future__ import print_function, unicode_literals, absolute_import, division
 import sys
 import numpy as np
@@ -149,47 +219,104 @@ lbl_cmap = random_label_cmap()
 ```
 
 ```python
-# Read in training data
-X = sorted(glob('train/images/*.tif'))
-Y = sorted(glob('train/masks/*.tif'))
-assert all(Path(x).name==Path(y).name for x,y in zip(X,Y))
+# Check that the data are correctly read in and assign variable to the images and their corresponding masks
+from pathlib import Path  # Import the Path object from the pathlib module
+
+X = sorted(glob('data_training/data/train/images/*.tif'))
+Y = sorted(glob('data_training/data/train/masks/*.tif'))
+assert all(Path(x).name==Path(y).name for x,y in zip(X,Y))  # Checks whether the base names of corresponding files in X and Y are equal for all pairs to avoid errors in subsequent processing
+
+# Print the list of files returned by the glob function call for X and Y
+print("Files found in images folder:")
+print(X)
+print("\nFiles found in masks folder:")
+print(Y)
 ```
 
 ```python
-# Assign images and masks to lists X and Y
-
+# Convert files specified in X and Y into lists, and then determine the number of channels in the images
+# Since the raw images are DAB-stained, 3 channel images are used for the training
 X = list(map(imread,X))
 Y = list(map(imread,Y))
 n_channel = 1 if X[0].ndim == 2 else X[0].shape[-1]
-``` 
-
+```
 
 ```python
-# Split into train and validation datasets.
+# Normalize images and fill small label holes.
+
+axis_norm = (0,1)   # normalize channels independently
+# axis_norm = (0,1,2) # normalize channels jointly
+if n_channel > 1:
+    print("Normalizing image channels %s." % ('jointly' if axis_norm is None or 2 in axis_norm else 'independently'))
+    sys.stdout.flush()
+
+X = [normalize(x,1,99.8,axis=axis_norm) for x in tqdm(X)]
+Y = [fill_label_holes(y) for y in tqdm(Y)]
+``` 
+
+```python
+# Split into train and validation datasets
+
 assert len(X) > 1, "not enough training data"
 rng = np.random.RandomState(42)
 ind = rng.permutation(len(X))
 n_val = max(1, int(round(0.15 * len(ind))))
 ind_train, ind_val = ind[:-n_val], ind[-n_val:]
 X_val, Y_val = [X[i] for i in ind_val]  , [Y[i] for i in ind_val]
-X_trn, Y_trn = [X[i] for i in ind_train], [Y[i] for i in ind_train] 
+X_trn, Y_trn = [X[i] for i in ind_train], [Y[i] for i in ind_train]
 print('number of images: %3d' % len(X))
 print('- training:       %3d' % len(X_trn))
 print('- validation:     %3d' % len(X_val))
 ```
 
 ```python
-# Training data consists of pairs of input image and label instances.
+# Training data consists of pairs of input image and label instances
+
+# Visualize an image and its corresponding label side by side in a matplotlib plot
 def plot_img_label(img, lbl, img_title="image", lbl_title="label", **kwargs):
     fig, (ai,al) = plt.subplots(1,2, figsize=(12,5), gridspec_kw=dict(width_ratios=(1.25,1)))
     im = ai.imshow(img, cmap='gray', clim=(0,1))
-    ai.set_title(img_title)    
+    ai.set_title(img_title)
     fig.colorbar(im, ax=ai)
     al.imshow(lbl, cmap=lbl_cmap)
     al.set_title(lbl_title)
     plt.tight_layout()
 ```
 
+```python
+i = min(9, len(X)-1)
+img, lbl = X[i], Y[i]
+assert img.ndim in (2,3)
+img = img if (img.ndim==2 or img.shape[-1]==3) else img[...,0]
+plot_img_label(img,lbl)
+None;
+```
+
+```python
+# A StarDist2D model is specified via a Config2D object
+# Print a summary of the Config2D class to be used for the training, its parameters, attributes, methods, and their descriptions
+print(Config2D.__doc__)
+```
+
+```python
+# 32 is a good default choice (see Data_Preparation.ipynb)
+n_rays = 32
+
+# Use OpenCL-based computations for data generator during training (requires 'gputools')
+use_gpu = False and gputools_available()
+
+# Predict on subsampled grid for increased efficiency and larger field of view
+grid = (2,2)
+
+conf = Config2D (
+    n_rays       = n_rays,
+    grid         = grid,
+    use_gpu      = use_gpu,
+    n_channel_in = n_channel,
+)
+print(conf)
+vars(conf)
+```
 
 ```python
 if use_gpu:
@@ -201,12 +328,14 @@ if use_gpu:
 ```
 
 ```python
-# Save the model configuration in the working directory
-model = StarDist2D(conf, name='stardist', basedir='models')
+# Create an instance of a 2D StarDist model using a configuration specified by 'conf'
+
+model = StarDist2D(conf, name='stardist_model', basedir='models')
 ```
 
 ```python
 # Check if the neural network has large enough boundaries to see up to the boundaries of most objects
+
 median_size = calculate_extents(list(Y), np.median)
 fov = np.array(model._axes_tile_overlap('YX'))
 print(f"median object size:      {median_size}")
@@ -216,25 +345,26 @@ if any(median_size > fov):
 ```
 
 ### Data Augmentation
-# Data augmentation artificially creates more training data by transforming exiting images and masks into different geometrical, yet plausible forms
 
 ```python
-def random_fliprot(img, mask): 
+# Data augmentation artificially creates more training data by transforming exiting images and masks into different geometrical, yet plausible forms
+
+# Here, the augmenter function applies random rotations, flips, and intensity changes to the images, which are typically sensible for (2D) microscopy images 
+def random_fliprot(img, mask):
     assert img.ndim >= mask.ndim
     axes = tuple(range(mask.ndim))
     perm = tuple(np.random.permutation(axes))
-    img = img.transpose(perm + tuple(range(mask.ndim, img.ndim))) 
-    mask = mask.transpose(perm) 
-    for ax in axes: 
+    img = img.transpose(perm + tuple(range(mask.ndim, img.ndim)))
+    mask = mask.transpose(perm)
+    for ax in axes:
         if np.random.rand() > 0.5:
             img = np.flip(img, axis=ax)
             mask = np.flip(mask, axis=ax)
-    return img, mask 
+    return img, mask
 
 def random_intensity_change(img):
     img = img*np.random.uniform(0.6,2) + np.random.uniform(-0.2,0.2)
     return img
-
 
 def augmenter(x, y):
     """Augmentation of a single input/label image pair.
@@ -266,35 +396,52 @@ for _ in range(3):
 ```
 
 ```python
-model.train(X_trn, Y_trn, validation_data=(X_val,Y_val), augmenter=augmenter, epochs=100, steps_per_epoch=10)
+# Initialize the training
+model.train(X_trn, Y_trn, validation_data=(X_val,Y_val), augmenter=augmenter, epochs=100, steps_per_epoch= 15)
 ```
+- The training process takes at least 1 hour 20 minutes (with the set parameters above) using 45 images (automatically split into 38 training and 7 validation images).
+![](training_pogress.png)
 
-### Threshold optimization
+
+- The visualization in tensorflow can be updated as the training progresses by clicking the refresh button any time during the process. 
+![](visualization_in_tensorboard.png)
+
+### Threshold Optimization
 ```python
 # The optimized threshold values are saved to disk and will be automatically loaded with the model
 model.optimize_thresholds(X_val, Y_val)
 ```
 
-### Evaluation and detection performance
+### Evaluation and Detection Performance of the Trained Model
 ```python
-#First predict the labels for all validation images:
+# First predict the labels for all validation images
 Y_val_pred = [model.predict_instances(x, n_tiles=model._guess_n_tiles(x), show_tile_progress=False)[0]
               for x in tqdm(X_val)]
 ```
 
 ```python
-#Plot a GT/prediction example to see how the model performs
-plot_img_label(X_val[0],Y_val[0], lbl_title="label GT")
-plot_img_label(X_val[0],Y_val_pred[0], lbl_title="label Pred")
+# See definitions of the abbreviations used in the evaluation above
+help(matching)
 ```
+
+```python
+# Plot a Ground truth/prediction example to see how the model performs
+# Plot one or two more (change the indeces of X_val, Y_val, and Y_val_pred) to see how the precision of the predictions on other images 
+
+plot_img_label(X_val[1],Y_val[1], lbl_title="label GT")
+plot_img_label(X_val[1],Y_val_pred[1], lbl_title="label Pred")
+```
+
 ```python
 # Choose several IoU thresholds τ that might be of interest, and for each, compute matching statistics for the validation data
+
 taus = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 stats = [matching_dataset(Y_val, Y_val_pred, thresh=t, show_progress=False) for t in tqdm(taus)]
 ```
 
 ```python
-# Print all available matching statistics for τ=0.5
+# Example: Print all available matching statistics for τ=0.5
+
 stats[taus.index(0.5)]
 ```
 
@@ -317,25 +464,46 @@ ax2.grid()
 ax2.legend();
 ```
 
-### Export the model
+![](IoU_Threshold.png)
+
+In the second subplot (ax2), the lines representing the number of false positives (fp), true positives (tp), and false negatives (fn) intersect at the IoU threshold value of 0.7 along the x-axis.
+
+This intersection point indicates that, at an IoU threshold of 0.7:
+
+- The number of false positives (fp) is equal to the number of true positives (tp), meaning that the model is making as many correct positive predictions as it is making incorrect positive predictions.
+
+- The number of false negatives (fn) is also equal to the number of true positives (tp), indicating that the model is missing the same number of true positive instances as it is correctly identifying.
+
+NB: The closer the IoU score is to 1 (conventionally ranges from 0 to 1), the better the prediction. In practice, an IoU score of 0.5 is often used as a threshold for good object detection. An IoU score of 0.5 or higher indicates that the predicted bounding box sufficiently captures the object of interest, even if it might not perfectly align with the ground truth. So, if the IoU score is above 0.5, the detection is typically considered acceptable.
+
+### Export the Model
 ```python
-# Download the trained model as a zip file to a local directory (change the value of the "exported_model_dir" value to the path of the saved model)
+# Export the model
+model.export_TF()
+```
+
+```python
+# Download the saved model to a local directory (change the value of the "model_dir" variable to the path of the saved model)
 import os
 
 # Specify the directory containing the exported model files
-exported_model_dir = "/content/models/stardist"
+model_dir = "/content/models/stardist_model"
 
 # List the files in the directory
-files = os.listdir(exported_model_dir)
+model_dir_files = os.listdir(model_dir)
 print("Files in exported model directory:")
-for file in files:
+for file in model_dir_files:
     print(file)
+```
 
-# Finally, export the directory caontaining the model and all its associated files from colab to a local directory. 
+```python
+# Finally, export the directory containing the model and all its associated files from the Colab notebook to a local directory
+
+from google.colab import files
 !zip -r models.zip models
+
+# Download the ZIP file
 files.download('models.zip')
 
 # Unzip the models.zip file to extract the model
 ```
-
-C:\Users\Elijah\Documents\stardist_demo_proj\Training_data.ipynb
