@@ -400,11 +400,11 @@ for _ in range(3):
 model.train(X_trn, Y_trn, validation_data=(X_val,Y_val), augmenter=augmenter, epochs=100, steps_per_epoch= 15)
 ```
 - The training process takes at least 1 hour 20 minutes (with the set parameters above) using 45 images (automatically split into 38 training and 7 validation images).
-![](training_pogress.png)
+![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/training_pogress.png)
 
 
 - The visualization in tensorflow can be updated as the training progresses by clicking the refresh button any time during the process. 
-![](visualization_in_tensorboard.png)
+![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/visualization_in_tensorboard.png)
 
 ### Threshold Optimization
 ```python
@@ -464,7 +464,7 @@ ax2.grid()
 ax2.legend();
 ```
 
-![](IoU_Threshold.png)
+![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/IoU_Threshold.png)
 
 In the second subplot (ax2), the lines representing the number of false positives (fp), true positives (tp), and false negatives (fn) intersect at the IoU threshold value of 0.7 along the x-axis.
 

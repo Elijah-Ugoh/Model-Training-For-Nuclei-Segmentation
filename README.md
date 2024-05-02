@@ -1,5 +1,5 @@
-# BINP37 Research Project Documentation
-# Data Exploration and Installation of Required Tools
+# Project Documentation
+## Data Exploration and Installation of Required Tools
 
 ### Installing QuPath
 QuPath is used for image analysis and Ground Truth annotation of stained slides
@@ -81,7 +81,7 @@ Below is the workflow for this:
 - Click "Run" and wait for the sctript to run.
 - The randomly selected cores will be saved in the specified destination directory. 
 
-NB: StarDist recommends at least 10, but 20 cores are used to provide sufficiengt training data. 
+NB: StarDist recommends at least 10, but 51 cores (6 test images, 7 validation images, and 38 training images) are used to provide sufficient training data.
 
 
 ### 3. Create crops for annotation from the TMA cores 
@@ -113,7 +113,7 @@ The workflow is explained below:
 - Go to Automate tab on QuPath and select "script editor"
 - The image below show a simple way to do this.
 
-How to annotate region of interests in each crop using QuPath ![](Animation.gif)
+How to annotate region of interests in each crop using QuPath ![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/Animation.gif)
 - All annotations must be exported after.
 - To do this, load the ```save_and_export_annotations.groovy``` script into the script editor. 
 - [This QuPath script](https://forum.image.sc/t/export-qupath-annotations-for-stardist-training/37391/3), which has been provided by Olivier Burri and Romain Guiet, will export the original images and the annotations as masks and save them in the specified directories. 
@@ -148,12 +148,17 @@ darwin dataset push pacc-image-analysis/training_dat a -p [folder_with_images_an
 
 
 ### Nuclei Detection Using the Trained Model
+Unzip the models.zip file to extract the model files. 
+
+```bash 
+unzip models.zip
+```
 
 NB: Usually, the trained model will not work in the associated ImageJ/Fiji plugins (e.g. CSBDeep and StarDist) and QuPath Extension, especially if TensorFlow 2.0 and later was used in the training. 
 
 For use in Fiji, the trained model must be exported using TensorFlow 1.x. For QuPath, the model must be converted to ONNX (Open Neural Network Exchange) format. The conversion allows for interoperability between different deep learning frameworks, in this case, enabling the model trained in TensorFlow to be run in other frameworks (that support ONNX) with minimal effort.
 
-The guide below outlines how to acheive this. 
+The guide below outlines how to achieve this. 
 
 1.For Fiji, if TensorFlow 2.x is used, StarDist provides a simple [process to convert the model](https://gist.github.com/uschmidt83/4b747862fe307044c722d6d1009f6183) to a useable format in Fiji. 
 
@@ -193,7 +198,14 @@ pip install -U tf2onnx
 ```
 Documentation for installing and using tf2onnx is provoded [here](https://github.com/onnx/tensorflow-onnx). 
 
-Once the insatllation completes, run the following command to convert the model. Note that the correct path to the model (with a '.pb' suffix) must be provided. 
+But, unlike for Fiji, the raw model file must also be extracted first.
+
+```bash 
+# Unzip the TF_SavedModel.zip obtained from the conversion above to extract the saved_model.pb
+unzip saved_model.pb
+```
+
+Proceed to install tf2onnx, then run the following command to convert the model file. Note that the correct path to the model (with a '.pb' suffix) must be provided. 
 
 ```bash 
 # Once tf2onnx is installed, run this command to convert the TF model to ONNX format
@@ -204,24 +216,32 @@ python -m tf2onnx.convert --opset 11 --saved-model /mnt/c/Users/Elijah/Documents
 
 # Stardist recommends opset value of 10, but that doesn't work due to update. 11 worked here. 
 ```
+
+### Using the Trained Model in QuPath and Fiji
 After successfully converting the model, the process below can be followed to use the model for cell nuclei segmentation in QuPath or Fiji. 
 
-1. With the instructions on [this page](https://qupath.readthedocs.io/en/0.4/docs/deep/stardist.html), the trained StarDist 2D model is incorporated directly within QuPath. 
+1. With the instructions on [this page](https://qupath.readthedocs.io/en/0.4/docs/deep/stardist.html), the trained and converted StarDist 2D model is incorporated directly within QuPath. 
 
-   - When the [QuPath extension for StarDist](https://github.com/qupath/qupath-extension-stardist) is downloaded, the path to the custom trained model must be changed within the script. 
-   - To use the StarDist extension for QuPath, Open QuPath and go to ```Extensions>StarDist``` and select the script to use. Each script requires a trained model. 
+   - Download the [QuPath extension for StarDist](https://github.com/qupath/qupath-extension-stardist). 
+   - To use the StarDist extension for QuPath, Open QuPath, go to ```Extensions>StarDist```, and select "StarDist H&E nucleus detection script". The will open up a new QuPath script editor with a customizable script for use with a custom trained model. For general purpose, the path to the custom trained model can be iputed in the "def modelPath" variable.
 
-   - For nuclei detection, the H&E nuclei dtection script provided by StarDist has been modified. 
+   - However, for the purpose of this project, this script has been modified for nuclei detection in DAB-stained images. The ```stardist_nuclei_detection_script.groovy``` is used for this purpose. It can also be run directory from the script editor. 
 
-   - Here are the [pretrained StarDist 2D models](https://github.com/qupath/models/tree/main/stardist) that can be downloaded and used for test-runs directly in QuPath. 
+   - Here are the other [pretrained StarDist 2D models](https://github.com/qupath/models/tree/main/stardist) that can be downloaded and used for test-runs directly in QuPath. 
 
-   - Remember to update the path for the custom trained or pretrained StarDist model in the script. 
+   -The path to the custom trained or pretrained StarDist model must always be changed before the script is run. 
+
+   - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection. 
 
 2. To use the trained model in Fiji, the instructions provided [here](https://imagej.net/plugins/stardist) must be followed to import the custom model into Fiji's StarDist 2D plugin. 
 
    - But, first, the StarDist 2D plugin for Fiji must be installed. This [guide](https://github.com/stardist/stardist-imagej) details how to install the plugin in Fiji. 
 
    - Once the plugin is successfully installed, the custom trained models can be applied for nuclei detection in nnew images. 
+
+   - To use the imported model, load an image into Fiji, go to ```Plugins>StarDist>StarDist2D```, make sure the model is selected under ```Advanced Options```, then click OK and wait for the detection to run.  
+
+   - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection. 
 
 
 
