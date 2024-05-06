@@ -233,6 +233,10 @@ After successfully converting the model, the process below can be followed to us
 
    - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection. 
 
+   ![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/detection_example1.png)
+
+   ![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/detection_example2.png)
+
 2. To use the trained model in Fiji, the instructions provided [here](https://imagej.net/plugins/stardist) must be followed to import the custom model into Fiji's StarDist 2D plugin. 
 
    - But, first, the StarDist 2D plugin for Fiji must be installed. This [guide](https://github.com/stardist/stardist-imagej) details how to install the plugin in Fiji. 
