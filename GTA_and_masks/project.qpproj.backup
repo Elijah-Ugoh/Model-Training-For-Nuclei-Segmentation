@@ -62,7 +62,7 @@
         }
       },
       "entryID": 1,
-      "randomizedName": "79c7c7a1-8915-4538-8b45-2e1cd78b6438",
+      "randomizedName": "492fd512-be22-4a12-a297-f86c6802e876",
       "imageName": "2A_cores_12 (1, x\u003d918, y\u003d1593, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -123,7 +123,7 @@
         }
       },
       "entryID": 2,
-      "randomizedName": "158e4cb2-5382-4d07-a566-f7261a528460",
+      "randomizedName": "980ccdf1-59ea-4f79-a294-e87e53af686b",
       "imageName": "2A_cores_12 (1, x\u003d1528, y\u003d673, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -184,7 +184,7 @@
         }
       },
       "entryID": 3,
-      "randomizedName": "58a08ece-fc6b-4857-bcfb-6f591f869df8",
+      "randomizedName": "0540f400-ff3b-4ed0-89a5-0969022c6441",
       "imageName": "2A_cores_12 (1, x\u003d2149, y\u003d2511, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -245,7 +245,7 @@
         }
       },
       "entryID": 4,
-      "randomizedName": "42475f42-42a1-49a6-acef-06f110c1ca97",
+      "randomizedName": "5d84946e-3ba8-4ddf-befa-d8084e670e4b",
       "imageName": "3A_cores_4 (1, x\u003d406, y\u003d1720, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -306,7 +306,7 @@
         }
       },
       "entryID": 5,
-      "randomizedName": "aebdde21-8a18-4899-95da-0ae805941f38",
+      "randomizedName": "d4584862-acaf-4ce3-8ea3-f424a825ca1a",
       "imageName": "3A_cores_4 (1, x\u003d1235, y\u003d1217, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -367,7 +367,7 @@
         }
       },
       "entryID": 6,
-      "randomizedName": "eb2585ae-db02-4d78-9eec-7da59f870e09",
+      "randomizedName": "16e19f3f-efa1-4d91-9bfe-f3f7c1c9726b",
       "imageName": "3A_cores_4 (1, x\u003d1508, y\u003d2266, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -428,7 +428,7 @@
         }
       },
       "entryID": 7,
-      "randomizedName": "c0c9f001-175e-458d-98ed-e9f724e164e0",
+      "randomizedName": "a5ab69e1-3518-4a4b-a33c-40837dd43fe2",
       "imageName": "3A_cores_5 (1, x\u003d549, y\u003d1344, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -489,7 +489,7 @@
         }
       },
       "entryID": 8,
-      "randomizedName": "0ea337ea-69b4-4c92-bd2b-dc3185b9f1b1",
+      "randomizedName": "e62c6e3e-2083-4dbd-bc1a-8789343a7699",
       "imageName": "3A_cores_5 (1, x\u003d1570, y\u003d1558, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -550,7 +550,7 @@
         }
       },
       "entryID": 9,
-      "randomizedName": "590fafa7-a68f-46d8-88a8-efa10d290c5d",
+      "randomizedName": "d1c7854c-6d48-4dde-86b8-9e6ef4eba3e4",
       "imageName": "3A_cores_5 (1, x\u003d1959, y\u003d2141, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -611,7 +611,7 @@
         }
       },
       "entryID": 10,
-      "randomizedName": "fd8ae831-2177-47d2-a748-fe1a3020944f",
+      "randomizedName": "d4119c90-b1ab-450c-a868-89acf6590253",
       "imageName": "3A_cores_19 (1, x\u003d910, y\u003d2453, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -672,7 +672,7 @@
         }
       },
       "entryID": 11,
-      "randomizedName": "54cc33e4-a4db-449f-bf1c-15bf6e6403bd",
+      "randomizedName": "190f8d63-1643-46f3-ba7e-f4edf23b92d2",
       "imageName": "3A_cores_19 (1, x\u003d1422, y\u003d1723, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -733,7 +733,7 @@
         }
       },
       "entryID": 12,
-      "randomizedName": "3f5712c6-65e2-47b4-8aff-2b9a6ffe62db",
+      "randomizedName": "fe65e0a0-9431-430d-b8ce-f468b91bb982",
       "imageName": "3A_cores_19 (1, x\u003d2117, y\u003d924, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -794,7 +794,7 @@
         }
       },
       "entryID": 13,
-      "randomizedName": "159a0bf3-f305-42b2-8ba0-a9fe945761c8",
+      "randomizedName": "978148c4-2211-424e-8852-a515187af148",
       "imageName": "4A_cores_2 (1, x\u003d466, y\u003d1243, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -855,7 +855,7 @@
         }
       },
       "entryID": 14,
-      "randomizedName": "6105e07c-1fde-4e42-9b84-040d633c82b9",
+      "randomizedName": "880ba25a-6efc-4ced-9627-83e3d675cf85",
       "imageName": "4A_cores_2 (1, x\u003d1373, y\u003d2528, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -916,7 +916,7 @@
         }
       },
       "entryID": 15,
-      "randomizedName": "4d1305ee-f29b-413a-b020-7491451259e4",
+      "randomizedName": "55ad11aa-ad48-4d66-a166-737297a86afc",
       "imageName": "4A_cores_2 (1, x\u003d1683, y\u003d936, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -977,7 +977,7 @@
         }
       },
       "entryID": 16,
-      "randomizedName": "0235a4bc-a832-4e26-9300-b59eb8a91e04",
+      "randomizedName": "38ff2329-ed50-4ebc-8e00-48c185f52295",
       "imageName": "4A_cores_8 (1, x\u003d2157, y\u003d1037, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1038,7 +1038,7 @@
         }
       },
       "entryID": 17,
-      "randomizedName": "36a8fadd-c2ee-4088-9f9e-be63e3b9d25a",
+      "randomizedName": "ee7e01f3-f9af-4ad5-96b6-a223517ec616",
       "imageName": "4A_cores_8 (1, x\u003d1246, y\u003d1795, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1099,7 +1099,7 @@
         }
       },
       "entryID": 18,
-      "randomizedName": "d38adcfa-c26b-4b76-8b25-50a46b1e61e4",
+      "randomizedName": "5e243e15-2953-4e27-b171-b86e678caee1",
       "imageName": "4A_cores_8 (1, x\u003d1354, y\u003d2343, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1160,7 +1160,7 @@
         }
       },
       "entryID": 19,
-      "randomizedName": "66bf3184-18b0-4053-9d62-fa5a41f92e14",
+      "randomizedName": "720ea266-71f4-4345-b347-7067d2ee4125",
       "imageName": "4A_cores_11 (1, x\u003d356, y\u003d1561, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1221,7 +1221,7 @@
         }
       },
       "entryID": 20,
-      "randomizedName": "de13f539-129a-4251-8f1c-3ea1378e778c",
+      "randomizedName": "42afcdf7-30fb-415e-a3c5-e635ce2505ae",
       "imageName": "4A_cores_11 (1, x\u003d1598, y\u003d2466, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1282,7 +1282,7 @@
         }
       },
       "entryID": 21,
-      "randomizedName": "0b1a1385-226b-4510-8e06-f25b4c9e0390",
+      "randomizedName": "09239b65-8eeb-4b32-bb97-014bac269c45",
       "imageName": "4A_cores_11 (1, x\u003d2435, y\u003d1250, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1343,7 +1343,7 @@
         }
       },
       "entryID": 22,
-      "randomizedName": "a41f1504-9488-43fd-bc65-850e56766e14",
+      "randomizedName": "86cdecfe-3d79-4128-acd7-392a73a7a3c1",
       "imageName": "4A_cores_18 (1, x\u003d1810, y\u003d409, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1404,7 +1404,7 @@
         }
       },
       "entryID": 23,
-      "randomizedName": "d4ea8fb3-1fc1-4589-95aa-bcc6122b797d",
+      "randomizedName": "82ca7059-8688-4e5e-abcf-d09d6dd553fc",
       "imageName": "4A_cores_18 (1, x\u003d1939, y\u003d1571, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1465,7 +1465,7 @@
         }
       },
       "entryID": 24,
-      "randomizedName": "ce89b9fd-f6d4-41ce-9e41-39cd9ca41d39",
+      "randomizedName": "5ff267eb-9cea-4d1c-879c-487bc4bb2e76",
       "imageName": "4A_cores_18 (1, x\u003d2461, y\u003d1469, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1526,7 +1526,7 @@
         }
       },
       "entryID": 25,
-      "randomizedName": "88274bc7-9be3-4f63-928f-aa46e7d2268b",
+      "randomizedName": "d8796f8c-740d-46bc-b3c5-c35640680a49",
       "imageName": "4A_cores_20 (1, x\u003d1646, y\u003d2266, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1587,7 +1587,7 @@
         }
       },
       "entryID": 26,
-      "randomizedName": "08a55a24-ad0c-4bc7-928b-afbaa713bef7",
+      "randomizedName": "ef0e9027-f516-4585-b4cf-1045e23b498b",
       "imageName": "4A_cores_20 (1, x\u003d420, y\u003d1016, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1648,7 +1648,7 @@
         }
       },
       "entryID": 27,
-      "randomizedName": "d8f44aa7-5260-45b5-a65b-6e60e397babc",
+      "randomizedName": "3acac491-eb92-4ada-a92a-5693ca0356be",
       "imageName": "4A_cores_20 (1, x\u003d1661, y\u003d1247, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1709,7 +1709,7 @@
         }
       },
       "entryID": 28,
-      "randomizedName": "6429e9b2-fb89-454f-9975-cffa468e33e0",
+      "randomizedName": "261d9be7-db3b-4cfa-b93d-9a45f4db0c63",
       "imageName": "5A_cores_16 (1, x\u003d1256, y\u003d762, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1770,7 +1770,7 @@
         }
       },
       "entryID": 29,
-      "randomizedName": "46f82477-7005-4e2e-b9a5-dd1d487ca947",
+      "randomizedName": "059f6062-2687-41c6-adfd-2dc29f83f852",
       "imageName": "5A_cores_16 (1, x\u003d1461, y\u003d1779, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1831,7 +1831,7 @@
         }
       },
       "entryID": 30,
-      "randomizedName": "7b6d63c1-e6d3-4337-90c8-8f2a49b8b7c9",
+      "randomizedName": "0b47d583-7507-452d-a377-9f538d85cf5d",
       "imageName": "5A_cores_16 (1, x\u003d2074, y\u003d1998, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1892,7 +1892,7 @@
         }
       },
       "entryID": 31,
-      "randomizedName": "8f22d322-c2f7-4e61-9808-9d8c2a5a0f6d",
+      "randomizedName": "d65eea14-857f-4239-bc86-cc03b1961860",
       "imageName": "6A_cores_14 (1, x\u003d1605, y\u003d2422, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1953,7 +1953,7 @@
         }
       },
       "entryID": 32,
-      "randomizedName": "2f7ed99f-4f69-4dc2-b514-3bc71a4a6cfa",
+      "randomizedName": "8e5b4d88-84a6-4aa3-b56a-4ebba9f213fb",
       "imageName": "6A_cores_14 (1, x\u003d1914, y\u003d417, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2014,7 +2014,7 @@
         }
       },
       "entryID": 33,
-      "randomizedName": "e9decf19-a44b-4597-a743-5700935b3ead",
+      "randomizedName": "d310feb5-239d-48e2-a057-c88c1d683e1a",
       "imageName": "6A_cores_14 (1, x\u003d2483, y\u003d1316, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2075,7 +2075,7 @@
         }
       },
       "entryID": 34,
-      "randomizedName": "cfa79635-7af7-4ce6-87e2-4bca57e48c3b",
+      "randomizedName": "0c54bbac-40f4-4321-83b5-7c7fd56082be",
       "imageName": "6A_cores_15 (1, x\u003d1251, y\u003d840, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2136,7 +2136,7 @@
         }
       },
       "entryID": 35,
-      "randomizedName": "b70b014a-52cf-4d7d-9925-74c3a3cdd4dd",
+      "randomizedName": "008bd478-e5d0-4ae9-aaea-46f0dd4440d0",
       "imageName": "6A_cores_15 (1, x\u003d1311, y\u003d273, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2197,7 +2197,7 @@
         }
       },
       "entryID": 36,
-      "randomizedName": "e6d0b5dc-74e3-4d86-aa70-c4f4bd8a0c8e",
+      "randomizedName": "62930110-c4e2-4fd7-835b-49981c4865ae",
       "imageName": "6A_cores_15 (1, x\u003d1327, y\u003d2402, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2258,7 +2258,7 @@
         }
       },
       "entryID": 37,
-      "randomizedName": "786891ee-5038-4ed9-9e43-655fbbf07129",
+      "randomizedName": "b8c9d4f0-9814-4268-9fe2-e5f411dd98e5",
       "imageName": "20A_cores_3 (1, x\u003d1427, y\u003d2559, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2319,7 +2319,7 @@
         }
       },
       "entryID": 38,
-      "randomizedName": "f33aef76-088b-4996-8d80-8cf97c0f0a47",
+      "randomizedName": "eab68c86-a268-4124-8ba8-3e7d26a3e800",
       "imageName": "20A_cores_3 (1, x\u003d1943, y\u003d1291, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2380,7 +2380,7 @@
         }
       },
       "entryID": 39,
-      "randomizedName": "5f106873-f0bc-4eac-a9f7-22bcd95a015e",
+      "randomizedName": "160fa497-d5af-42cb-964a-a2329ff3375e",
       "imageName": "20A_cores_3 (1, x\u003d2004, y\u003d927, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2441,7 +2441,7 @@
         }
       },
       "entryID": 40,
-      "randomizedName": "917dfe0f-6b85-4e92-a449-1652bdd3c03b",
+      "randomizedName": "b1a05e62-1d80-4805-b065-ae084b7f67d0",
       "imageName": "15A_cores_17 (1, x\u003d1159, y\u003d1602, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2502,7 +2502,7 @@
         }
       },
       "entryID": 41,
-      "randomizedName": "22c73b1e-4024-4936-a8e7-0aaebbe8d79e",
+      "randomizedName": "248ebca3-8fd0-4711-b6a9-9e22abf3cff0",
       "imageName": "15A_cores_17 (1, x\u003d1780, y\u003d667, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2563,7 +2563,7 @@
         }
       },
       "entryID": 42,
-      "randomizedName": "9818246a-08ca-4696-a635-acdb81bdb3c4",
+      "randomizedName": "8506b01b-ccdb-4024-8030-7f08373a69d6",
       "imageName": "15A_cores_17 (1, x\u003d2373, y\u003d1819, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2624,7 +2624,7 @@
         }
       },
       "entryID": 43,
-      "randomizedName": "c84b655d-9c60-419d-9120-29fd56f507df",
+      "randomizedName": "1cb8189c-e86f-4283-94dc-f3451efe311b",
       "imageName": "16A_cores_10 (1, x\u003d979, y\u003d570, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2685,7 +2685,7 @@
         }
       },
       "entryID": 44,
-      "randomizedName": "684f592f-2cb0-49d2-99c8-929e631b9638",
+      "randomizedName": "59abada1-b368-4bdf-a326-32960bf7adcd",
       "imageName": "16A_cores_10 (1, x\u003d1612, y\u003d2265, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2746,7 +2746,7 @@
         }
       },
       "entryID": 45,
-      "randomizedName": "826b5722-b535-495b-83ea-cd9cc065084b",
+      "randomizedName": "4d544e42-4b1e-4a76-aaeb-434bfe4764cd",
       "imageName": "16A_cores_10 (1, x\u003d2404, y\u003d1795, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2807,7 +2807,7 @@
         }
       },
       "entryID": 46,
-      "randomizedName": "ea1e0508-42db-4742-965d-68bb89f7405d",
+      "randomizedName": "208ae4cb-08e5-45a0-9637-b165720aa557",
       "imageName": "16A_cores_1 (1, x\u003d1010, y\u003d2542, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2868,7 +2868,7 @@
         }
       },
       "entryID": 47,
-      "randomizedName": "4a54d504-d0ad-40a1-8ca4-b94b76b75aa4",
+      "randomizedName": "eaf47335-4321-4f18-8da9-9df80389a64d",
       "imageName": "16A_cores_1 (1, x\u003d1465, y\u003d798, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2929,7 +2929,7 @@
         }
       },
       "entryID": 48,
-      "randomizedName": "284dbaf7-386c-4d49-ba8b-c7fa14f54fee",
+      "randomizedName": "e520ef08-4dd0-4dd6-9bb2-7001c742afbd",
       "imageName": "16A_cores_1 (1, x\u003d2020, y\u003d1549, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2990,7 +2990,7 @@
         }
       },
       "entryID": 49,
-      "randomizedName": "72f7d45c-b0bf-4957-b7b6-ba6359466c88",
+      "randomizedName": "8c139194-3863-40d8-abfd-ff1819a4c2fb",
       "imageName": "15A_cores_13 (1, x\u003d982, y\u003d2095, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -3051,7 +3051,7 @@
         }
       },
       "entryID": 50,
-      "randomizedName": "69aab525-916c-48fd-962a-e6b24f5e3e8a",
+      "randomizedName": "a5b746a2-c924-4c3e-bc4d-380f51f56135",
       "imageName": "15A_cores_13 (1, x\u003d1690, y\u003d1262, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -3112,7 +3112,7 @@
         }
       },
       "entryID": 51,
-      "randomizedName": "62038c5e-53aa-4ea2-b43b-c1755241c8a2",
+      "randomizedName": "c5eab55e-3d7a-4cab-b5a3-820343d517a0",
       "imageName": "15A_cores_13 (1, x\u003d2478, y\u003d1755, w\u003d301, h\u003d301).tif",
       "metadata": {}
     }
