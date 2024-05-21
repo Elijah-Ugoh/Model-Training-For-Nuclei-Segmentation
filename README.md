@@ -1,10 +1,19 @@
-# Project Documentation
+# Development of a 2D Nuclei Segmentation Model for the Detection and VisualiZation of PACCs in Breast Cancer TMA Images
+This repository contains the code and step-by-step process for training a deep-learning model for 2D nuclei segmentation of poly-aneuploid cancer cells (PACCs) in breast cancer tissue microarray (TMA) images using the [StarDist deep-learning](https://github.com/stardist/stardist/tree/main) package in Python.
+
+## Overview
+StarDist is optimized for handling round-shaped objects like cells and nuclei and has no limitation regarding normalization and bit depth of the data. The training data consists of the raw tissue image crops obtained from breast cancer patients and the corresponding ground truth annotatations or labels (as masks) or each image. The model is trained to detect and segment nuclei of all sizes, including PACCs, present in breast cancer tissue images.
+
+Annotation was focused mainly on the nuclei and stromata in each tissue image, and PACCs are identifiable by their abnormally-large nuclei. The figure below shows a summarized workflow from a raw image crop, the ground truth annotation, and model prediction.
+
+![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/raw_image_ground_truth_prediction.png)
+
 ## Data Exploration and Installation of Required Tools
+The data used in this project is brightfield tissue micro-array (TMA) images stained using EpCAM-DAB and obtained from 1190 pre-treatment breast cancer patients in the [SweBCG-RT91 cohort](https://www.sciencedirect.com/science/article/pii/S0959804916323620?via%3Dihub). 
 
 ### Installing QuPath
-QuPath is used for image analysis and Ground Truth annotation of stained slides
+[QuPath](https://qupath.readthedocs.io/en/stable/docs/intro/installation.html#download-install) was used to label (ground truth annotation) the images. Once downloaded, it can be installed as below:
 
-[QuPath Documentation](https://qupath.readthedocs.io/en/stable/docs/intro/installation.html#download-install)
 ```bash
 # Install QuPath-v0.5.1-Linux.tar.xz 
 # Process
@@ -12,27 +21,19 @@ QuPath is used for image analysis and Ground Truth annotation of stained slides
 wget https://github.com/qupath/qupath/releases/download/v0.5.1/QuPath-v0.5.1-Linux.tar.xz
 tar -xvf QuPath-v0.5.1-Linux.tar.xz # Extract the application
 rm QuPath-v0.5.1-Linux.tar.xz # Remove the zip file
-chmod u+x /path/to/QuPath/bin/QuPath #Make the launcher executable
+chmod u+x /path/to/QuPath/bin/QuPath # Make the launcher executable
 ```
+QuPath requires some dependences, such as JavaFX, so there can be some issues running the application via Linux Terminal. 
 
-Alternatively, install the software on Windows directly. QuPath is an open-source unsigned software. It requires a some dependences, such as JavaFX, so ther can be some issues running the application via Linux Terminal
+Alternatively, install the software on Windows directly by running the msi file. 
 
 ```bash
 # Download and run the standard Windows (local) installer for QuPath
 QuPath-v0.5.1-Windows.msi
 ```
-### Installing StarDist
-Follow the guide on the documenation
-Installing and using [StarDist](https://github.com/stardist/stardist)
-
-```bash
-pip install tensorflow # First install TensorFlow (version  2.15.0)
-pip install stardist # then install stardist -(version 0.9.1)
-```
 
 ### Installing Fiji
-Follow the guide on the documenation
-Installing and using [Fiji](https://imagej.net/software/fiji/downloads)
+[Fiji](https://imagej.net/software/fiji/downloads) is an alternative to QuPath, but, in this project, it was only used for running the model and comparing the output with QuPath. 
 
 ```bash
 #On Linux
@@ -40,114 +41,109 @@ wget https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20170530.zip # Ima
 ```
 NB: Fiji is distributed as a portable application. So, no need to run an installer; just download, unpack and start the software.
 
-## Training the Model using Stardist
-### Nuclei segmentation using Stardist
-- Biological analysis of 2D and 3D images - identify cell shapes, nuclei shape, segment individual cells from staining amd microscopy.
+### Installing StarDist
+The StarDist Python pipeline is used for training the model. It can be [downloaded](https://github.com/stardist/stardist#Installation) and installed as follows: 
 
-- Dense segmenatation and instamce segmentation has been very successful by training deep (convolutional) neural networks with annotated training data (ground truth images)
+```bash
+# StarDist and TensorFlow, a dependency used by StarDist, installation can be done later in Google Colab
 
-- Stardist is well adapted to nuclei segmentation becasue cell nuclei typically have round shapes.
+pip install tensorflow # First install TensorFlow (version 2.15.0)
+pip install stardist # Then install stardist-(version 0.9.1)
+```
 
-- Stardist is ideal for round-shaped images and has no limitation regarding normalization and bit depth of the data. 
-- When it comes to cell sizes, the training data must include all the sizes you expect it to be able to predict. Otherwise, it wil perform badly when you give it data that has varying sizes not found on the training data. 
-
+## Labeling Images and Training the Model Using Stardist
 
 ### 1. Spilt the TMA cores into into individual images 
-This is done using the ```new_dearrayer.groovy``` script. This script is found in the script directory. 
-Below is the workflow for this:
+Each microarray contained between 90-130 different tissues cores embedded at defined array coordinates. Data from all patients are randomly distributed in the TMA, with one or two cores per patient. The cores are split to obtain training images. 
+
+This is done using the ```new_dearrayer.groovy``` script. This script is found in the [Scripts](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Scripts) directory. Below is the workflow for this:
 
 - Create a new project directory, ```split_tma-cores```. 
-- Launch QuPath from Windows Home button or the Linux command line.
+- Launch QuPath from Windows Home button or the Linux terminal.
 - Click "Create project" and select the folder created above. 
-- Click "Add images'' and load the TMA cores to be de-arrayed into QuPath. Select "Brightfield (H-DAB)" under "Set image type", then proceed to add images. 
+- Click "Add images" and load the TMA cores to be de-arrayed into QuPath. Select "Brightfield (H-DAB)" under "Set image type", then proceed to add images. 
 - Go to Automate tab on QuPath and select "script editor"
 - Load the ```new_dearrayer.groovy``` into the script editor. 
 - Within the script, modify ```qupathProjectDir``` to the path where the TMA cores will be saved and ```tmaImagesDir``` to the TMA location. Also specify the name of the new folder that will hold the splitted TMA cores in ```line 18``` of the script. 
 - Click "Run" and wait for the de-arraying to complete.
-- A new folder with the specified name will be created inside the QuPath folder directory created in step 1 above. 
-- Repeat this process for 10 more TMAs 
+- A new folder with the specified name will be created inside the QuPath project directory created in step 1 above. 
+- This process was repeated for 10 more TMAs containing PACCs. 
 
 
-### 2. Randomly select 20 TMA cores from all  
+### 2. Randomly select 20 cores from the de-arrayed TMA images
 This is done using the ```Ramdomize.groovy``` script. 
 Below is the workflow for this:
 
 - Create a new project directory, ```randomly_selected_TMA_cores```. 
-- Launch QuPath from Windows Home button or the Linux command line.
+- Launch QuPath from Windows Home button or the Linux terminal.
 - Click "Create project" and select the folder created above. 
 - Go to Automate tab on QuPath and select "script editor"
 - Load the ```Randomize.groovy``` script into the script editor. 
-- Within the script, modify ```sourceDir``` to the location of the TMA cores and ```destinationDir``` to the destination you want to save them in. Also specify the number of images to be randomly selected from the shuffling in ```line 9``` of the script. 
+- Within the script, modify ```sourceDir``` to the location of the TMA cores and ```destinationDir``` to the destination where the selcted cores will be saved in. The number of images to be randomly selected is specified in ```line 9``` of the script. 
 - Click "Run" and wait for the sctript to run.
-- The randomly selected cores will be saved in the specified destination directory. 
-
-NB: StarDist recommends at least 10, but 51 cores (6 test images, 7 validation images, and 38 training images) are used to provide sufficient training data.
+- The script shuffles all the cores, selcts the specified number, and saves them in the specified directory. 
 
 
-### 3. Create crops for annotation from the TMA cores 
-To generate the training data, crops that capture different morphologies and regions/time-points in each core must be created. The crops are essentially sub-regions of the cores, measuring 300 x 300 Pixels squared in dimension. For each core, 3 crops are created. Since the training is done using StarDist pluggin, the least recommended crop dimension is 128 X 128 Pixels squared. The workflow is explained below:
+### 3. Create crops for annotation from the selected TMA cores 
+To generate the training data, crops that capture different morphologies and regions/time-points in each core must be created. Crops are sub-regions of the cores, measuring 300 x 300 pixels squared in dimension. For each core, 3 crops are created. StarDist recommends a minimum of 128 X 128 pixels squared. The workflow is explained below:
 
 - Create a new project directory, ```annotations_for_training```. 
 - Launch QuPath from Windows Home button or the Linux command line.
-- Click "Create project" and select the folder created above. 
-- Click "Add images'' and load the randomly selected TMA cores (20) from step 2 above into QuPath. Select "Brightfield (H-DAB)" under "Set image type", then proceed to add images.
-- Double-click on the first image to select it.
-- With th image loaded in the viewer, go to ```Classify>Training images>Create region annotations```
-- Set Width and Height to 300 pixels, each, and set Location to Random. 
-- Click on 'Create region' as many times as necesary to create sqaure crops of the image. 
-- Save the best 3 crops: double-click on each crop to select it, go to ```File>Export images>Original pixels```.
+- Click "Create project" and select the directory created above. 
+- Click "Add images'' and load the randomly selected TMA cores (20) from step (2) above into QuPath. Select "Brightfield (H-DAB)" under "Set image type", then proceed to add images.
+- Double-click on the first image to open it in the viewer.
+- With the image loaded in the viewer, go to ```Classify>Training images>Create region annotations```
+- Set Width and Height to 300, each. Set the Size units to 'Pixels', Classification to 'Region*', and Location to 'Random'. 
+- Click on 'Create region' as many times as necesary to create multiple sqaure crops of the image. 
+- Save the best 3 crops: Double-click on each crop to select it, go to ```File>Export images>Original pixels```.
 - Select 'TIFF(ImageJ)' as the Export Format. Leave Downsample factor as 1.0.
-- Save the image in a new folder inside the ```annotations_for_training``` project directory. Also, save the other two crops to the same folder. It's best to retain the same folder name as the cores. 
-- Repeat this process for the remaining 19 cores. 
+- Save the image in a new directory inside the ```annotations_for_training``` project directory. Also, save the other two crops to the same directory. It's best to retain the same folder name as the cores. 
+- This process is repeated for the remaining 19 cores. 
 
-### 4. Ground Truth Annotataions
-Here, two things need to be done to create the annotation images:
-- Create ROI object per crop/image
+NB: It is not possible to automate this process using a script, as a visual inspection of the selected cores is necesary before they are saved. This way, the best cores are selected for annotation.
+
+### 4. Labelling the Images (Ground Truth Annotataions)
+Here, two things are done to create the image labels:
+- Create region of interests (ROI) object per crop/image
 - Covert the ROI objects to label masks
 
 The workflow is explained below:
 - Create a new project directory, ```GTA_and_masks```. 
-- Launch QuPath from Windows Home button or the Linux command line.
+- Launch QuPath from Windows Home button or the Linux terminal.
 - Click "Create project" and select the folder created above.
-- Anotate the ROI (all cell nuclei in each crop) and press Ctrl+ S to save the annotations. 
+- Anotate the ROI (all cell nuclei in each crop). Press Ctrl+S to save the annotations. 
 - Go to Automate tab on QuPath and select "script editor"
-- The image below show a simple way to do this.
-
-How to annotate region of interests in each crop using QuPath ![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/Animation.gif)
-- All annotations must be exported after.
-- To do this, load the ```save_and_export_annotations.groovy``` script into the script editor. 
+- All annotations are exported after. This is done by loading the ```save_and_export_annotations.groovy``` script into the script editor. 
 - [This QuPath script](https://forum.image.sc/t/export-qupath-annotations-for-stardist-training/37391/3), which has been provided by Olivier Burri and Romain Guiet, will export the original images and the annotations as masks and save them in the specified directories. 
-- Remember to change lines 80 and 81 to the preferred directories for saving the ground truth images and masks. 
+- Change lines 80 and 81 to the preferred directories for saving the ground truth images and masks. 
 - Instead of running the script every time an annotation image is created, use "Run for project" from the script editor menu to export all the annotations for all images in the QuPath project ```GTA_and_masks```.
+- The image below shows how to create image labels in QuPath:
 
-### Split Data into Test and Train Datasets
-use the python ```split_images_train_and_test.py``` to randomly split the data into test and train datasets. This way, we ensure that the images for tests are as representative of the training images as possible while also saving time when dealing with large training datasets.
+![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/Animation.gif)
+Annotating ROIs in each crop using QuPath
 
-It is conventional to use 10-20% of the data for testing. Here, 12% considering the data isn't large.
-From the terminal, run the script as:
+NB: StarDist recommends at least 10 crops for training. In this case, 51 cores (6 test images, 7 validation images, and 38 training images) are used to provide sufficient training data.
+
+### 5. Split Data into Test and Train Datasets
+The python script ```split_images_train_and_test.py``` is used to randomly split the data into test and train datasets. This way, we ensure that the images for tests are as representative of the training images while also automating the process.
+
+It is conventional to use 10-20% of the data for testing. Here, 12% is used considering the data isn't large. 
 
 ```bash
+# From the terminal, run the script as:
 python split_images_train_and_test.py
 
 # NB: Update the directories for the images (in the script), as well as where the test and train data will be saved after splitting.  
 ```
 
-### Training the model
-The ```Model_Training_Script``` is run in Google Colab. But, it can also be run in other IDEs or from the terminal. 
+### 6. Training the model
+The [Model_Training_Script](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/Scripts/Model_Training_Script.md) is run in Google Colab. But, it can also be run in other IDEs or from the terminal. 
 
-However, Colab has a simple interface and works best without issues. The script contains the instructions for importing the data and training it using the StarDist deep learning package in Python.
+Colab has a simple interface and has TensorFlow pre-installed. The script contains the instructions for importing the data and training a model using the StarDist deep-learning package in Python.
 
-The code is to be run in a stepwise manner, starting from installing StarDist and TensorFlow (if using Colab, the latest TensorFlow comes pre-installed), as well as importing all necessary python packages.
+The code blocks are run sequentially, starting from installing StarDist and TensorFlow, as well as importing all necessary python packages.
 
-NB: StarDist works well for segmenting all kinds of blob-like objects, especially roundish objects like cells and nuclei with a star-convex shape.
-
-
-
-### CLI upload if using V7 for annotation
-darwin dataset push pacc-image-analysis/training_dat a -p [folder_with_images_and_folders]
-
-
-### Nuclei Detection Using the Trained Model
+## Nuclei Detection Using the Trained Model
 Unzip the models.zip file to extract the model files. 
 
 ```bash 
@@ -168,19 +164,19 @@ The guide below outlines how to achieve this.
 conda create -y --name tf1_model_export python=3.7
 conda activate tf1_model_export
 # note: gpu support is not necessary for tensorflow
-pip install "tensorflow<2"
+pip install "tensorflow<2" # This isntall tensorflow v1.15.5
 pip install "csbdeep[tf1]"
 # also install stardist in this example
 pip install "stardist[tf1]"
 
-#export the model using this python script:
+# export the model using this python script:
 from stardist.models import StarDist2D
 model = StarDist2D(None, name='my_model', basedir='.')
 model.export_TF()
 
 # Replace value of the basedir parameter with the directory path where you want to save the exported TensorFlow model
 # Also replace value in the name variable with the name of your trained model. See export_model.py for example. 
- ```
+```
 
 ```bash
 # Save it as export_model.py and run from the terminal as:
@@ -194,7 +190,7 @@ Within the same conda ```tf1_model_export``` enevironment, install tf2onnx.
 
 ```bash
 # First, isntall tf2onnx, if not already installed from the terminal 
-pip install -U tf2onnx
+pip install -U tf2onnx   # This installs tf2onnx v1.16.1 in the environment
 ```
 Documentation for installing and using tf2onnx is provoded [here](https://github.com/onnx/tensorflow-onnx). 
 
@@ -246,8 +242,3 @@ After successfully converting the model, the process below can be followed to us
    - To use the imported model, load an image into Fiji, go to ```Plugins>StarDist>StarDist2D```, make sure the model is selected under ```Advanced Options```, then click OK and wait for the detection to run.  
 
    - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection. 
-
-
-
-
- 
