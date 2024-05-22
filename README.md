@@ -1,4 +1,4 @@
-# Development of a 2D Nuclei Segmentation Model for the Detection and VisualiZation of PACCs in Breast Cancer TMA Images
+# A 2D Nuclei Segmentation Model for the Detection and Visualization of PACCs in Breast Cancer TMA Images
 This repository contains the code and step-by-step process for training a deep-learning model for 2D nuclei segmentation of poly-aneuploid cancer cells (PACCs) in breast cancer tissue microarray (TMA) images using the [StarDist deep-learning](https://github.com/stardist/stardist/tree/main) package in Python.
 
 ## Overview
