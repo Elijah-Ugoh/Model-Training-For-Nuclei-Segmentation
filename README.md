@@ -15,9 +15,6 @@ The data used in this project is brightfield tissue micro-array (TMA) images sta
 [QuPath](https://qupath.readthedocs.io/en/stable/docs/intro/installation.html#download-install) was used to label (ground truth annotation) the images. Once downloaded, it can be installed as below:
 
 ```bash
-# Install QuPath-v0.5.1-Linux.tar.xz 
-# Process
-
 wget https://github.com/qupath/qupath/releases/download/v0.5.1/QuPath-v0.5.1-Linux.tar.xz
 tar -xvf QuPath-v0.5.1-Linux.tar.xz # Extract the application
 rm QuPath-v0.5.1-Linux.tar.xz # Remove the zip file
@@ -25,27 +22,22 @@ chmod u+x /path/to/QuPath/bin/QuPath # Make the launcher executable
 ```
 QuPath requires some dependences, such as JavaFX, so there can be some issues running the application via Linux Terminal. 
 
-Alternatively, install the software on Windows directly by running the msi file. 
-
-```bash
-# Download and run the standard Windows (local) installer for QuPath
-QuPath-v0.5.1-Windows.msi
-```
+Alternatively, install the software on Windows by directly downloading and running the [QuPath-v0.5.1-Windows.msi](https://github.com/qupath/qupath/releases/download/v0.5.1/QuPath-v0.5.1-Windows.msi) file.`
 
 ### Installing Fiji
 [Fiji](https://imagej.net/software/fiji/downloads) is an alternative to QuPath, but, in this project, it was only used for running the model and comparing the output with QuPath. 
 
 ```bash
-#On Linux
 wget https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20170530.zip # ImageJ2
 ```
 NB: Fiji is distributed as a portable application. So, no need to run an installer; just download, unpack and start the software.
 
-### Installing StarDist
+### Installing StarDist and TensorFlow
 The StarDist Python pipeline is used for training the model. It can be [downloaded](https://github.com/stardist/stardist#Installation) and installed as follows: 
 
 ```bash
-# StarDist and TensorFlow, a dependency used by StarDist, installation can be done later in Google Colab
+# TensorFlow is a dependency used by StarDist
+# Both installations can be done later in Google Colab
 
 pip install tensorflow # First install TensorFlow (version 2.15.0)
 pip install stardist # Then install stardist-(version 0.9.1)
@@ -159,55 +151,48 @@ The guide below outlines how to achieve this.
 1.For Fiji, if TensorFlow 2.x is used, StarDist provides a simple [process to convert the model](https://gist.github.com/uschmidt83/4b747862fe307044c722d6d1009f6183) to a useable format in Fiji. 
 
 ```python
-# Create a new Python environment and install TensorFlow 1.x, CSBDeep and other necessary packages (e.g. StarDist)
+# Create a new Python environment and install TensorFlow 1.x, CSBDeep, and StarDist
 
 conda create -y --name tf1_model_export python=3.7
 conda activate tf1_model_export
-# note: gpu support is not necessary for tensorflow
+
+# Note: GPU support is not necessary for tensorflow
 pip install "tensorflow<2" # This isntall tensorflow v1.15.5
 pip install "csbdeep[tf1]"
-# also install stardist in this example
+
+# Also install stardist in this environment
 pip install "stardist[tf1]"
-
-# export the model using this python script:
-from stardist.models import StarDist2D
-model = StarDist2D(None, name='my_model', basedir='.')
-model.export_TF()
-
-# Replace value of the basedir parameter with the directory path where you want to save the exported TensorFlow model
-# Also replace value in the name variable with the name of your trained model. See export_model.py for example. 
 ```
 
+Export the model using the ```export_model.py``` python script. 
+
 ```bash
-# Save it as export_model.py and run from the terminal as:
 python export_model.py
 
-# Make sure the script is saved in the same directory where it is run from
+# The script must be saved in the same directory where it is run from
 ```
 
 2.For Qupath, a similar conversion process must be used. 
-Within the same conda ```tf1_model_export``` enevironment, install tf2onnx.
+Within the same conda  enevironment, ```tf1_model_export```, install tf2onnx.
 
 ```bash
 # First, isntall tf2onnx, if not already installed from the terminal 
-pip install -U tf2onnx   # This installs tf2onnx v1.16.1 in the environment
+pip install -U tf2onnx   # v1.16.1
 ```
-Documentation for installing and using tf2onnx is provoded [here](https://github.com/onnx/tensorflow-onnx). 
+Documentation for installing and using tf2onnx is provided [here](https://github.com/onnx/tensorflow-onnx). 
 
-But, unlike for Fiji, the raw model file must also be extracted first.
+But, unlike for Fiji, the conversion is run on the raw model file.
 
 ```bash 
-# Unzip the TF_SavedModel.zip obtained from the conversion above to extract the saved_model.pb
+# Unzip the TF_SavedModel.zip obtained from step (1) above to extract the saved_model.pb model file
 unzip saved_model.pb
 ```
 
-Proceed to install tf2onnx, then run the following command to convert the model file. Note that the correct path to the model (with a '.pb' suffix) must be provided. 
+Proceed to install tf2onnx, then run the following command to convert the model file to ONNX format. The correct path to the model (with a '.pb' suffix) must be provided. 
 
 ```bash 
 # Once tf2onnx is installed, run this command to convert the TF model to ONNX format
-python -m tf2onnx.convert --opset 11 --saved-model "/path/to/saved/model/" --output_frozen_graph "/path/to/output/model/file.pb"
 
-# Example usage
 python -m tf2onnx.convert --opset 11 --saved-model /mnt/c/Users/Elijah/Documents/BINP37_Research_Project/first_training/models/models/stardist/TF_SavedModel --output_frozen_graph /mnt/c/Users/Elijah/Downloads/dab_stained_nuclei.pb
 
 # Stardist recommends opset value of 10, but that doesn't work due to update. 11 worked here. 
@@ -218,27 +203,32 @@ After successfully converting the model, the process below can be followed to us
 
 1. With the instructions on [this page](https://qupath.readthedocs.io/en/0.4/docs/deep/stardist.html), the trained and converted StarDist 2D model is incorporated directly within QuPath. 
 
-   - Download the [QuPath extension for StarDist](https://github.com/qupath/qupath-extension-stardist). 
-   - To use the StarDist extension for QuPath, Open QuPath, go to ```Extensions>StarDist```, and select "StarDist H&E nucleus detection script". The will open up a new QuPath script editor with a customizable script for use with a custom trained model. For general purpose, the path to the custom trained model can be iputed in the "def modelPath" variable.
+   - Download the [QuPath extension for StarDist](https://github.com/qupath/qupath-extension-stardist). The [version used](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/qupath-extension-stardist-0.5.0.jar) for this project is included in this repository.  
 
-   - However, for the purpose of this project, this script has been modified for nuclei detection in DAB-stained images. The ```stardist_nuclei_detection_script.groovy``` is used for this purpose. It can also be run directory from the script editor. 
+   - To use the StarDist extension for QuPath, open QuPath, go to ```Extensions>StarDist```, and select "StarDist H&E nucleus detection script". The will open up a new QuPath script editor with a customizable script for use with a custom trained model. The path to the custom trained model can be iputed in the "def modelPath" variable.
 
-   - Here are the other [pretrained StarDist 2D models](https://github.com/qupath/models/tree/main/stardist) that can be downloaded and used for test-runs directly in QuPath. 
+   - For the purpose of this project, this script has been modified to ```detect_dab_stained_nuclei_.groovy``` for nuclei detection in EpCAM-DAB-stained images. This script is used for our trained purpose.
 
-   -The path to the custom trained or pretrained StarDist model must always be changed before the script is run. 
+   - The model can now be used to detct and segment nuclei in any TMA image not seen by the model during training.  
 
-   - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection. 
+   - The H&E model used for comparison can be downloaded from other [pretrained StarDist 2D models](https://github.com/qupath/models/tree/main/stardist).
+
+   - Run the H&E model on the same set of images for comparison.
+
+   - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection.
 
    ![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/detection_example1.gif)
 
    ![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/detection_example2.gif)
 
+QuPath was primarily used in this project to run the trained model. However, Fiji can also be used. 
+
 2. To use the trained model in Fiji, the instructions provided [here](https://imagej.net/plugins/stardist) must be followed to import the custom model into Fiji's StarDist 2D plugin. 
 
-   - But, first, the StarDist 2D plugin for Fiji must be installed. This [guide](https://github.com/stardist/stardist-imagej) details how to install the plugin in Fiji. 
+   - But first, the StarDist 2D plugin for Fiji must be installed. This [guide](https://github.com/stardist/stardist-imagej) details how to install the plugin in Fiji. 
 
-   - Once the plugin is successfully installed, the custom trained models can be applied for nuclei detection in nnew images. 
+   - Once the plugin is successfully installed, the custom trained models can be applied for nuclei detection in new images. 
 
-   - To use the imported model, load an image into Fiji, go to ```Plugins>StarDist>StarDist2D```, make sure the model is selected under ```Advanced Options```, then click OK and wait for the detection to run.  
+   - To use the imported model, load an image into Fiji, go to ```Plugins>StarDist>StarDist2D```, make sure the model is selected under ```Advanced Options```, then click OK and wait for the prediction to run.
 
-   - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection. 
+   - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection.
