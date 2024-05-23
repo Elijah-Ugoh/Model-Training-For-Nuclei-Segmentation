@@ -241,7 +241,7 @@ The converted model files can be downloaded from this repository:
 
 - For use in QuPath, download the [dab_stained_nuclei2024.pb](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Model/dab_stained_nuclei2024.pb) file - RGB (3-channel) images
 
-- For use in Fiji, download the [TF_SavedModel.zip](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Model/TF_SavedModel) zip file - RGB (3-channel) images
+- For use in Fiji, download the [TF_SavedModel.zip](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Model/TF_SavedModel.zip) file - RGB (3-channel) images
 
 
 ### Credit & Reuse
