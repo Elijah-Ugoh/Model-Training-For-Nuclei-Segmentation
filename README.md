@@ -241,11 +241,13 @@ The converted model files can be downloaded from this repository:
 
 - For use in QuPath, download the [dab_stained_nuclei2024.pb](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Model/dab_stained_nuclei2024.pb) file - RGB (3-channel) images
 
-- For use in Fiji, download the [TF_SavedModel](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Model/TF_SavedModel) zip file - RGB (3-channel) images
+- For use in Fiji, download the [TF_SavedModel.zip](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Model/TF_SavedModel) zip file - RGB (3-channel) images
 
 
 ### Credit & Reuse
 This model can be used for free, but if you intend to train your own model using the included script, remember to [cite the original develelopers of StarDist](https://github.com/stardist/stardist).
+
+Also [cite QuPath](https://qupath.readthedocs.io/en/stable/docs/intro/citing.html) if used for annotating your ground truth labels. 
 
 ### Limitations
 This model was trained on brightfield tumor images stained with EpCAM-DAB only. While it is applicable for detecting and segmenting nuclei in breast cancer images, we cannot guarantee that it will produce the best results for other types of tissue images.
