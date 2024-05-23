@@ -1,8 +1,8 @@
 # A 2D Nuclei Segmentation Model for the Detection and Visualization of PACCs in Breast Cancer TMA Images
-This repository contains the code and step-by-step process for training a deep-learning model for 2D nuclei segmentation of poly-aneuploid cancer cells (PACCs) in breast cancer tissue microarray (TMA) images using the [StarDist deep-learning](https://github.com/stardist/stardist/tree/main) package in Python.
+This repository contains the code and step-by-step process for training a deep-learning model for 2D nuclei segmentation of poly-aneuploid cancer cells (PACCs) in breast cancer tissue microarray (TMA) images using the [StarDist deep-learning](https://github.com/stardist/stardist) package in Python.
 
 ## Overview
-StarDist is optimized for handling round-shaped objects like cells and nuclei and has no limitation regarding normalization and bit depth of the data. The training data consists of the raw tissue image crops obtained from breast cancer patients and the corresponding ground truth annotatations or labels (as masks) or each image. The model is trained to detect and segment nuclei of all sizes, including PACCs, present in breast cancer tissue images.
+StarDist is optimized for handling round-shaped objects like cells and nuclei and has no limitation regarding normalization and bit depth of the data. The training data consists of the raw tissue image crops obtained from breast cancer patients and the corresponding ground truth annotatations or labels (as masks) for each image. The model is trained to detect and segment nuclei of all sizes, including PACCs, present in breast cancer tissue images.
 
 Annotation was focused mainly on the nuclei and stromata in each tissue image, and PACCs are identifiable by their abnormally-large nuclei. The figure below shows a summarized workflow from a raw image crop, the ground truth annotation, and model prediction.
 
@@ -232,3 +232,20 @@ QuPath was primarily used in this project to run the trained model. However, Fij
    - To use the imported model, load an image into Fiji, go to ```Plugins>StarDist>StarDist2D```, make sure the model is selected under ```Advanced Options```, then click OK and wait for the prediction to run.
 
    - Adjust the normalization percentiles, pixel size, and threshold as necessary for optimal nuclei detection.
+
+## Acknowledgements
+This study is based on data from the [SweBCG-RT91 cohort](https://www.sciencedirect.com/science/article/pii/S0959804916323620?via%3Dihub). Special thanks to the contributors of this dataset and also to the [Tissue Development and Evolution (TiDE)](https://tide.blogg.lu.se/welcome-to-tide/) group at the Medical Faculty of Lund University, where this project was performed, for providing access to the dataset.
+
+### Downloads
+The converted model files can be downloaded from this repository:
+
+- For use in QuPath, download the [dab_stained_nuclei2024.pb](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Model/dab_stained_nuclei2024.pb) file - RGB (3-channel) images
+
+- For use in Fiji, download the [TF_SavedModel](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/tree/master/Model/TF_SavedModel) zip file - RGB (3-channel) images
+
+
+### Credit & Reuse
+This model can be used for free, but if you intend to train your own model using the included script, remember to [cite the original develelopers of StarDist](https://github.com/stardist/stardist).
+
+### Limitations
+This model was trained on brightfield tumor images stained with EpCAM-DAB only. While it is applicable for detecting and segmenting nuclei in breast cancer images, we cannot guarantee that it will produce the best results for other types of tissue images.
