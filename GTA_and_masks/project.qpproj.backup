@@ -3,7 +3,7 @@
   "createTimestamp": 1712234176275,
   "modifyTimestamp": 1712234176275,
   "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/GTA_and_masks/project.qpproj",
-  "lastID": 51,
+  "lastID": 60,
   "images": [
     {
       "serverBuilder": {
@@ -62,7 +62,7 @@
         }
       },
       "entryID": 1,
-      "randomizedName": "492fd512-be22-4a12-a297-f86c6802e876",
+      "randomizedName": "c55c8b3e-8c46-4355-b54e-0e9cc503bdf9",
       "imageName": "2A_cores_12 (1, x\u003d918, y\u003d1593, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -123,7 +123,7 @@
         }
       },
       "entryID": 2,
-      "randomizedName": "980ccdf1-59ea-4f79-a294-e87e53af686b",
+      "randomizedName": "a72e5de8-502a-4b50-8704-83c24d8beb9f",
       "imageName": "2A_cores_12 (1, x\u003d1528, y\u003d673, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -184,7 +184,7 @@
         }
       },
       "entryID": 3,
-      "randomizedName": "0540f400-ff3b-4ed0-89a5-0969022c6441",
+      "randomizedName": "841371a7-747a-4d66-b9e1-03a6624b2078",
       "imageName": "2A_cores_12 (1, x\u003d2149, y\u003d2511, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -245,7 +245,7 @@
         }
       },
       "entryID": 4,
-      "randomizedName": "5d84946e-3ba8-4ddf-befa-d8084e670e4b",
+      "randomizedName": "8f6ab4b4-24e3-4748-ab79-ee51d25d6732",
       "imageName": "3A_cores_4 (1, x\u003d406, y\u003d1720, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -306,7 +306,7 @@
         }
       },
       "entryID": 5,
-      "randomizedName": "d4584862-acaf-4ce3-8ea3-f424a825ca1a",
+      "randomizedName": "3cdd8b23-2010-49a3-8209-750a4013d7b5",
       "imageName": "3A_cores_4 (1, x\u003d1235, y\u003d1217, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -367,7 +367,7 @@
         }
       },
       "entryID": 6,
-      "randomizedName": "16e19f3f-efa1-4d91-9bfe-f3f7c1c9726b",
+      "randomizedName": "ba8ce452-a0dc-4570-a739-e5a8b9b58887",
       "imageName": "3A_cores_4 (1, x\u003d1508, y\u003d2266, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -428,7 +428,7 @@
         }
       },
       "entryID": 7,
-      "randomizedName": "a5ab69e1-3518-4a4b-a33c-40837dd43fe2",
+      "randomizedName": "0dcd0c14-f75e-44c2-ae28-c874bf596951",
       "imageName": "3A_cores_5 (1, x\u003d549, y\u003d1344, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -489,7 +489,7 @@
         }
       },
       "entryID": 8,
-      "randomizedName": "e62c6e3e-2083-4dbd-bc1a-8789343a7699",
+      "randomizedName": "15be9d8d-c685-4141-bd33-77f68cce67a7",
       "imageName": "3A_cores_5 (1, x\u003d1570, y\u003d1558, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -550,7 +550,7 @@
         }
       },
       "entryID": 9,
-      "randomizedName": "d1c7854c-6d48-4dde-86b8-9e6ef4eba3e4",
+      "randomizedName": "fefe3d44-b52b-4cc5-8883-05de4bb26095",
       "imageName": "3A_cores_5 (1, x\u003d1959, y\u003d2141, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -611,7 +611,7 @@
         }
       },
       "entryID": 10,
-      "randomizedName": "d4119c90-b1ab-450c-a868-89acf6590253",
+      "randomizedName": "6d0d53f0-4371-4563-b972-5b89c186feba",
       "imageName": "3A_cores_19 (1, x\u003d910, y\u003d2453, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -672,7 +672,7 @@
         }
       },
       "entryID": 11,
-      "randomizedName": "190f8d63-1643-46f3-ba7e-f4edf23b92d2",
+      "randomizedName": "9292407a-8919-4a62-9590-57cdbb909e27",
       "imageName": "3A_cores_19 (1, x\u003d1422, y\u003d1723, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -733,7 +733,7 @@
         }
       },
       "entryID": 12,
-      "randomizedName": "fe65e0a0-9431-430d-b8ce-f468b91bb982",
+      "randomizedName": "e7110bed-c1d5-4bcf-bf40-79a1a7db4902",
       "imageName": "3A_cores_19 (1, x\u003d2117, y\u003d924, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -794,7 +794,7 @@
         }
       },
       "entryID": 13,
-      "randomizedName": "978148c4-2211-424e-8852-a515187af148",
+      "randomizedName": "cfd58117-9e74-4864-9c5c-689c1cea6269",
       "imageName": "4A_cores_2 (1, x\u003d466, y\u003d1243, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -855,7 +855,7 @@
         }
       },
       "entryID": 14,
-      "randomizedName": "880ba25a-6efc-4ced-9627-83e3d675cf85",
+      "randomizedName": "c964ffd8-508d-4438-abb4-8010ac05cde3",
       "imageName": "4A_cores_2 (1, x\u003d1373, y\u003d2528, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -916,7 +916,7 @@
         }
       },
       "entryID": 15,
-      "randomizedName": "55ad11aa-ad48-4d66-a166-737297a86afc",
+      "randomizedName": "a574f015-a8a5-4141-8917-6659b799fe59",
       "imageName": "4A_cores_2 (1, x\u003d1683, y\u003d936, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -977,7 +977,7 @@
         }
       },
       "entryID": 16,
-      "randomizedName": "38ff2329-ed50-4ebc-8e00-48c185f52295",
+      "randomizedName": "f8064c2b-036f-4047-8747-6cc32bec6720",
       "imageName": "4A_cores_8 (1, x\u003d2157, y\u003d1037, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1038,7 +1038,7 @@
         }
       },
       "entryID": 17,
-      "randomizedName": "ee7e01f3-f9af-4ad5-96b6-a223517ec616",
+      "randomizedName": "5a06a001-8945-4aa5-b974-e29974a0e7d9",
       "imageName": "4A_cores_8 (1, x\u003d1246, y\u003d1795, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1099,7 +1099,7 @@
         }
       },
       "entryID": 18,
-      "randomizedName": "5e243e15-2953-4e27-b171-b86e678caee1",
+      "randomizedName": "718b2a93-ceff-4137-b330-19dde69026a5",
       "imageName": "4A_cores_8 (1, x\u003d1354, y\u003d2343, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1160,7 +1160,7 @@
         }
       },
       "entryID": 19,
-      "randomizedName": "720ea266-71f4-4345-b347-7067d2ee4125",
+      "randomizedName": "5998f3c8-9224-450a-ab37-46242a6499f7",
       "imageName": "4A_cores_11 (1, x\u003d356, y\u003d1561, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1221,7 +1221,7 @@
         }
       },
       "entryID": 20,
-      "randomizedName": "42afcdf7-30fb-415e-a3c5-e635ce2505ae",
+      "randomizedName": "78241b8e-42c7-4031-826f-3f4ad50c82dc",
       "imageName": "4A_cores_11 (1, x\u003d1598, y\u003d2466, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1282,7 +1282,7 @@
         }
       },
       "entryID": 21,
-      "randomizedName": "09239b65-8eeb-4b32-bb97-014bac269c45",
+      "randomizedName": "cf297964-ba76-4b60-9e09-d848b31a7ba8",
       "imageName": "4A_cores_11 (1, x\u003d2435, y\u003d1250, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1343,7 +1343,7 @@
         }
       },
       "entryID": 22,
-      "randomizedName": "86cdecfe-3d79-4128-acd7-392a73a7a3c1",
+      "randomizedName": "c002e1bb-5a85-4802-8569-147c7ca1ec99",
       "imageName": "4A_cores_18 (1, x\u003d1810, y\u003d409, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1404,7 +1404,7 @@
         }
       },
       "entryID": 23,
-      "randomizedName": "82ca7059-8688-4e5e-abcf-d09d6dd553fc",
+      "randomizedName": "2c22069f-2e7d-45fd-ac89-cfc2311ff0eb",
       "imageName": "4A_cores_18 (1, x\u003d1939, y\u003d1571, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1465,7 +1465,7 @@
         }
       },
       "entryID": 24,
-      "randomizedName": "5ff267eb-9cea-4d1c-879c-487bc4bb2e76",
+      "randomizedName": "ab2540c3-a204-46e9-a411-63de6ac61528",
       "imageName": "4A_cores_18 (1, x\u003d2461, y\u003d1469, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1526,7 +1526,7 @@
         }
       },
       "entryID": 25,
-      "randomizedName": "d8796f8c-740d-46bc-b3c5-c35640680a49",
+      "randomizedName": "463e84e2-5511-4b23-b55e-de0fe3d70d49",
       "imageName": "4A_cores_20 (1, x\u003d1646, y\u003d2266, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1587,7 +1587,7 @@
         }
       },
       "entryID": 26,
-      "randomizedName": "ef0e9027-f516-4585-b4cf-1045e23b498b",
+      "randomizedName": "a65ec8aa-01df-4ee1-87f8-872f44ce744b",
       "imageName": "4A_cores_20 (1, x\u003d420, y\u003d1016, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1648,7 +1648,7 @@
         }
       },
       "entryID": 27,
-      "randomizedName": "3acac491-eb92-4ada-a92a-5693ca0356be",
+      "randomizedName": "f814985b-07f8-46af-81c1-d815ade6f478",
       "imageName": "4A_cores_20 (1, x\u003d1661, y\u003d1247, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1709,7 +1709,7 @@
         }
       },
       "entryID": 28,
-      "randomizedName": "261d9be7-db3b-4cfa-b93d-9a45f4db0c63",
+      "randomizedName": "8a90a84b-bf91-4d7b-8d2c-0b14684acdf8",
       "imageName": "5A_cores_16 (1, x\u003d1256, y\u003d762, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1770,7 +1770,7 @@
         }
       },
       "entryID": 29,
-      "randomizedName": "059f6062-2687-41c6-adfd-2dc29f83f852",
+      "randomizedName": "92e52106-6970-480f-94f0-45f5ad8f104e",
       "imageName": "5A_cores_16 (1, x\u003d1461, y\u003d1779, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1831,7 +1831,7 @@
         }
       },
       "entryID": 30,
-      "randomizedName": "0b47d583-7507-452d-a377-9f538d85cf5d",
+      "randomizedName": "0eace2e2-ff8a-449e-8baf-895c6103d684",
       "imageName": "5A_cores_16 (1, x\u003d2074, y\u003d1998, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1892,7 +1892,7 @@
         }
       },
       "entryID": 31,
-      "randomizedName": "d65eea14-857f-4239-bc86-cc03b1961860",
+      "randomizedName": "ca8713fd-d18a-4ce4-aaa4-538c11a1b8b5",
       "imageName": "6A_cores_14 (1, x\u003d1605, y\u003d2422, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -1953,7 +1953,7 @@
         }
       },
       "entryID": 32,
-      "randomizedName": "8e5b4d88-84a6-4aa3-b56a-4ebba9f213fb",
+      "randomizedName": "43a5d4ed-458f-477c-8d1a-c5042bba303a",
       "imageName": "6A_cores_14 (1, x\u003d1914, y\u003d417, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2014,7 +2014,7 @@
         }
       },
       "entryID": 33,
-      "randomizedName": "d310feb5-239d-48e2-a057-c88c1d683e1a",
+      "randomizedName": "57dec1f0-b960-4181-b6ca-0952df2c3b44",
       "imageName": "6A_cores_14 (1, x\u003d2483, y\u003d1316, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2075,7 +2075,7 @@
         }
       },
       "entryID": 34,
-      "randomizedName": "0c54bbac-40f4-4321-83b5-7c7fd56082be",
+      "randomizedName": "e77f9da1-7a4b-46c6-8b0c-adac29e8dd35",
       "imageName": "6A_cores_15 (1, x\u003d1251, y\u003d840, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2136,7 +2136,7 @@
         }
       },
       "entryID": 35,
-      "randomizedName": "008bd478-e5d0-4ae9-aaea-46f0dd4440d0",
+      "randomizedName": "30da7f62-7577-4dcf-b9df-0be30b656e76",
       "imageName": "6A_cores_15 (1, x\u003d1311, y\u003d273, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2197,7 +2197,7 @@
         }
       },
       "entryID": 36,
-      "randomizedName": "62930110-c4e2-4fd7-835b-49981c4865ae",
+      "randomizedName": "99d26d9e-a141-4c62-bf0c-bf462ee53ee4",
       "imageName": "6A_cores_15 (1, x\u003d1327, y\u003d2402, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2258,7 +2258,7 @@
         }
       },
       "entryID": 37,
-      "randomizedName": "b8c9d4f0-9814-4268-9fe2-e5f411dd98e5",
+      "randomizedName": "a72b2571-3732-4b1a-a9b2-d27248588faf",
       "imageName": "20A_cores_3 (1, x\u003d1427, y\u003d2559, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2319,7 +2319,7 @@
         }
       },
       "entryID": 38,
-      "randomizedName": "eab68c86-a268-4124-8ba8-3e7d26a3e800",
+      "randomizedName": "b231d353-d6f2-4a4a-bd71-0a624eb6f5a9",
       "imageName": "20A_cores_3 (1, x\u003d1943, y\u003d1291, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2380,7 +2380,7 @@
         }
       },
       "entryID": 39,
-      "randomizedName": "160fa497-d5af-42cb-964a-a2329ff3375e",
+      "randomizedName": "c576a994-0423-4001-b313-8bd630e1c495",
       "imageName": "20A_cores_3 (1, x\u003d2004, y\u003d927, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2441,7 +2441,7 @@
         }
       },
       "entryID": 40,
-      "randomizedName": "b1a05e62-1d80-4805-b065-ae084b7f67d0",
+      "randomizedName": "f995839f-426e-4bad-8973-1aa74f9294a9",
       "imageName": "15A_cores_17 (1, x\u003d1159, y\u003d1602, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2502,7 +2502,7 @@
         }
       },
       "entryID": 41,
-      "randomizedName": "248ebca3-8fd0-4711-b6a9-9e22abf3cff0",
+      "randomizedName": "6dfcf959-4099-433f-bdc0-1cb8ecccaca2",
       "imageName": "15A_cores_17 (1, x\u003d1780, y\u003d667, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2563,7 +2563,7 @@
         }
       },
       "entryID": 42,
-      "randomizedName": "8506b01b-ccdb-4024-8030-7f08373a69d6",
+      "randomizedName": "d560cfef-a0a9-48bd-81cf-da13cb099540",
       "imageName": "15A_cores_17 (1, x\u003d2373, y\u003d1819, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2624,7 +2624,7 @@
         }
       },
       "entryID": 43,
-      "randomizedName": "1cb8189c-e86f-4283-94dc-f3451efe311b",
+      "randomizedName": "0ebd13c4-61f2-4695-ae19-1be03a800b98",
       "imageName": "16A_cores_10 (1, x\u003d979, y\u003d570, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2685,7 +2685,7 @@
         }
       },
       "entryID": 44,
-      "randomizedName": "59abada1-b368-4bdf-a326-32960bf7adcd",
+      "randomizedName": "cf354da6-d54e-4394-add3-fd16121d0e11",
       "imageName": "16A_cores_10 (1, x\u003d1612, y\u003d2265, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2746,7 +2746,7 @@
         }
       },
       "entryID": 45,
-      "randomizedName": "4d544e42-4b1e-4a76-aaeb-434bfe4764cd",
+      "randomizedName": "34cadf26-f2ce-4110-803e-1f3ddd3a1961",
       "imageName": "16A_cores_10 (1, x\u003d2404, y\u003d1795, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2807,7 +2807,7 @@
         }
       },
       "entryID": 46,
-      "randomizedName": "208ae4cb-08e5-45a0-9637-b165720aa557",
+      "randomizedName": "d6302c2b-c22f-4271-a7fa-25987264f6a4",
       "imageName": "16A_cores_1 (1, x\u003d1010, y\u003d2542, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2868,7 +2868,7 @@
         }
       },
       "entryID": 47,
-      "randomizedName": "eaf47335-4321-4f18-8da9-9df80389a64d",
+      "randomizedName": "cfd46651-b54d-40ef-bf52-725ba3c85074",
       "imageName": "16A_cores_1 (1, x\u003d1465, y\u003d798, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2929,7 +2929,7 @@
         }
       },
       "entryID": 48,
-      "randomizedName": "e520ef08-4dd0-4dd6-9bb2-7001c742afbd",
+      "randomizedName": "9e4b83a1-b03c-4f8e-9aa0-0ceb67b3b122",
       "imageName": "16A_cores_1 (1, x\u003d2020, y\u003d1549, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -2990,7 +2990,7 @@
         }
       },
       "entryID": 49,
-      "randomizedName": "8c139194-3863-40d8-abfd-ff1819a4c2fb",
+      "randomizedName": "6af407fa-1aa0-4729-bdc6-5f7e3f3c6d81",
       "imageName": "15A_cores_13 (1, x\u003d982, y\u003d2095, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -3051,7 +3051,7 @@
         }
       },
       "entryID": 50,
-      "randomizedName": "a5b746a2-c924-4c3e-bc4d-380f51f56135",
+      "randomizedName": "9a801d18-cbe7-4995-a028-e021c5ad420c",
       "imageName": "15A_cores_13 (1, x\u003d1690, y\u003d1262, w\u003d301, h\u003d301).tif",
       "metadata": {}
     },
@@ -3112,8 +3112,374 @@
         }
       },
       "entryID": 51,
-      "randomizedName": "c5eab55e-3d7a-4cab-b5a3-820343d517a0",
+      "randomizedName": "346dab7e-51fb-45bf-8518-c0d23d1774d6",
       "imageName": "15A_cores_13 (1, x\u003d2478, y\u003d1755, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_7/16A_cores_7%20(1,%20x\u003d1021,%20y\u003d228,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_7 (1, x\u003d1021, y\u003d228, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 55,
+      "randomizedName": "fb74df44-3b07-4b34-8cd2-2850f5907435",
+      "imageName": "16A_cores_7 (1, x\u003d1021, y\u003d228, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_7/16A_cores_7%20(1,%20x\u003d1118,%20y\u003d790,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_7 (1, x\u003d1118, y\u003d790, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 56,
+      "randomizedName": "4d8e39e4-3862-4f43-a9a9-28508c98297b",
+      "imageName": "16A_cores_7 (1, x\u003d1118, y\u003d790, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/16A_cores_7/16A_cores_7%20(1,%20x\u003d1781,%20y\u003d2617,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "16A_cores_7 (1, x\u003d1781, y\u003d2617, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 57,
+      "randomizedName": "4bca0a68-2ff3-4652-8bed-1ca77e6caafd",
+      "imageName": "16A_cores_7 (1, x\u003d1781, y\u003d2617, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_6/6A_cores_6%20(1,%20x\u003d496,%20y\u003d911,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_6 (1, x\u003d496, y\u003d911, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 58,
+      "randomizedName": "e5acecfd-33f1-450b-b9ec-c7ca0effcef8",
+      "imageName": "6A_cores_6 (1, x\u003d496, y\u003d911, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_6/6A_cores_6%20(1,%20x\u003d1861,%20y\u003d2411,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_6 (1, x\u003d1861, y\u003d2411, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 59,
+      "randomizedName": "834bd61a-cb15-4e33-84db-8605e119f107",
+      "imageName": "6A_cores_6 (1, x\u003d1861, y\u003d2411, w\u003d301, h\u003d301).tif",
+      "metadata": {}
+    },
+    {
+      "serverBuilder": {
+        "builderType": "uri",
+        "providerClassName": "qupath.imagej.images.servers.ImageJServerBuilder",
+        "uri": "file:/C:/Users/Elijah/Documents/BINP37_Research_Project/annotations_for_training/6A_cores_6/6A_cores_6%20(1,%20x\u003d1889,%20y\u003d1681,%20w\u003d301,%20h\u003d301).tif",
+        "args": [],
+        "metadata": {
+          "name": "6A_cores_6 (1, x\u003d1889, y\u003d1681, w\u003d301, h\u003d301).tif",
+          "width": 301,
+          "height": 301,
+          "sizeZ": 1,
+          "sizeT": 1,
+          "channelType": "DEFAULT",
+          "isRGB": true,
+          "pixelType": "UINT8",
+          "levels": [
+            {
+              "downsample": 1.0,
+              "width": 301,
+              "height": 301
+            }
+          ],
+          "channels": [
+            {
+              "name": "Red",
+              "color": -65536
+            },
+            {
+              "name": "Green",
+              "color": -16711936
+            },
+            {
+              "name": "Blue",
+              "color": -16776961
+            }
+          ],
+          "pixelCalibration": {
+            "pixelWidth": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "pixelHeight": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "zSpacing": {
+              "value": 1.0,
+              "unit": "µm"
+            },
+            "timeUnit": "SECONDS",
+            "timepoints": []
+          },
+          "preferredTileWidth": 301,
+          "preferredTileHeight": 301
+        }
+      },
+      "entryID": 60,
+      "randomizedName": "a9b7a7d2-be04-4165-9c84-8f6df420f534",
+      "imageName": "6A_cores_6 (1, x\u003d1889, y\u003d1681, w\u003d301, h\u003d301).tif",
       "metadata": {}
     }
   ]
