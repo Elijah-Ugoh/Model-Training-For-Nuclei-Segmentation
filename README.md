@@ -185,7 +185,7 @@ But, unlike for Fiji, the conversion is run on the raw model file.
 
 ```bash 
 # Unzip the TF_SavedModel.zip obtained from step (1) above to extract the saved_model.pb model file
-unzip saved_model.pb
+unzip TF_SavedModel.zip
 ```
 
 Proceed to install tf2onnx, then run the following command to convert the model file to ONNX format. The correct path to the model (with a '.pb' suffix) must be provided. 
