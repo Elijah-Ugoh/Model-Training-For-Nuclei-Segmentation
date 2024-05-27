@@ -1,16 +1,25 @@
 # Model Training Script
-The scripts for training and validation have already been provided by [StarDist](https://nbviewer.org/github/stardist/stardist/blob/master/examples/2D). However, the script used below has been adpated for this particular use case, and therefore has several changes. 
+The notebook for training and validation have been provided by [StarDist](https://nbviewer.org/github/stardist/stardist/blob/master/examples/2D). However, the code used below has been adpated for this particular use case, and therefore has some changes.
 
-But, before running these scripts, the following steps must have been completed. Refer to the ```README.md``` file for details on how to do these:
+But, before running these code, the following steps must have been completed. Refer to the ```README.md``` file for details on how to do these:
 
-1. De-arraying of the TMA cores
-2. Creating crops of images and masks for training
-3. Splitting the images and masks into training and test datasets
+1. Creating crops of images and masks from TMA cores.
+2. Generating training data by annotating ROIs in the crops. 
+3. Splitting the images and masks into training and test datasets.
+
+Below are the Notebooks used in this project:
+
+- [Data Preparation](https://colab.research.google.com/drive/1gw9ATdYw8QktLqLJT5pQ9wKxQ9zOvYir?usp=sharing)
+
+- [Model Training](https://colab.research.google.com/drive/1KKI6eyBgBG-590ktFPLUk96BCevFO_il#scrollTo=yom1JrUuDlvM)
+
+- [Model Predictions](https://colab.research.google.com/drive/1D697xfXbUkokDMrhDDkyOFIAeSU24sgC)
+
 
 ## Data Preparation
-- Before the actual training is done, it is recommended to confirm the fitting of the ground-truth labels with star-convex polygons, as this shows the optimal "number of rays" to be used in the training process. It also shows if the annotations in the image are ideal for training with the Stardist model.
+- Before the actual training is done, the ```Data Preparation``` script is used to confirm the fitting of the ground-truth labels with star-convex polygons, as this shows the optimal "number of rays" to be used in the training process. It also shows if the annotations in the image are ideal for training with the Stardist model.
 
-- Open a Google Colab notebook and run each code block one after the other. See the data prep script used for this project [here](https://colab.research.google.com/drive/1gw9ATdYw8QktLqLJT5pQ9wKxQ9zOvYir?usp=sharing).
+- Open a Google Colab notebook and run the code blocks sequentially. 
 
 ```python
 # First, install StarDist
@@ -152,7 +161,7 @@ The plot shows that the annotations are ideal for training a neural network usin
 
 
 
-## Training Script
+## Model Training 
 - Open a Google Colab notebook and run each code block one after the other. See the model training script used for this project [here](https://colab.research.google.com/drive/1KKI6eyBgBG-590ktFPLUk96BCevFO_il?usp=sharing).
 
 ```python
@@ -388,7 +397,7 @@ for _ in range(3):
     plot_img_label(img_aug, lbl_aug, img_title="image augmented", lbl_title="label augmented")
 ```
 
-### Actual Training
+### Load Tensorboard and Imitialize Training
 ```python
 # Load tensorboard for visualizing and monitoring the training process
 %reload_ext tensorboard
@@ -404,7 +413,8 @@ model.train(X_trn, Y_trn, validation_data=(X_val,Y_val), augmenter=augmenter, ep
 
 
 - The visualization in tensorflow can be updated as the training progresses by clicking the refresh button any time during the process. 
-![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/visualization_in_tensorboard.png)
+
+![visualization of Model Training Progress in Tensorboard](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/visualization_in_tensorboard.png)
 
 ### Threshold Optimization
 ```python
@@ -464,17 +474,7 @@ ax2.grid()
 ax2.legend();
 ```
 
-![](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/IoU_Threshold.png)
-
-In the second subplot (ax2), the lines representing the number of false positives (fp), true positives (tp), and false negatives (fn) intersect at the IoU threshold value of 0.7 along the x-axis.
-
-This intersection point indicates that, at an IoU threshold of 0.7:
-
-- The number of false positives (fp) is equal to the number of true positives (tp), meaning that the model is making as many correct positive predictions as it is making incorrect positive predictions.
-
-- The number of false negatives (fn) is also equal to the number of true positives (tp), indicating that the model is missing the same number of true positive instances as it is correctly identifying.
-
-NB: The closer the IoU score is to 1 (conventionally ranges from 0 to 1), the better the prediction. In practice, an IoU score of 0.5 is often used as a threshold for good object detection. An IoU score of 0.5 or higher indicates that the predicted bounding box sufficiently captures the object of interest, even if it might not perfectly align with the ground truth. So, if the IoU score is above 0.5, the detection is typically considered acceptable.
+![Plot of Model Matching Statistics Against IoU Threshold](https://github.com/Elijah-Ugoh/Model-Training-For-Nuclei-Segmentation/blob/master/images/IoU_Threshold.png)
 
 ### Export the Model
 ```python
